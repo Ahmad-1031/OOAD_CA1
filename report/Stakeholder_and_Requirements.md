@@ -37,3 +37,25 @@
 | PR7 | S3 L6 | Changes can affect several linked arrangements. | Links between arrangements are not visible, so their dependencies are not tracked | A change may leave conflicting records behind or affect arrangements nobody checked |
 | PR8 | S5 L4 | Connectivity may be unreliable during off-site work. | The process does not account for offline working | Staff may be unable to access or update records while off-site, which may cause delays or lost updates |
 | PR9 | S4 L2 | Teams use status terms differently, and planned activities can be changed, partially completed, paused or withdrawn | Activity status is not recorded in a shared, standard form | It is difficult to identify what is awaiting action and who is responsible, and the record may not show what happened |
+
+
+
+# Step 3: Business Problem Statement
+
+Kerry Community Digital Archive receives photographs, documents, audio and video contributions from individuals and local organisations (S1 L1). Information about these contributions is stored across forms, folders and spreadsheets, which may conflict between sources and slow staff down when searching across records (S1 L2, S4 L1)
+
+Ownership and permissions for submitted material are not always certain, so material may be prepared for publication before rights are confirmed. This creates rights risks (S2 L2)
+
+Requests arrive through several channels rather than a single point of entry. This can cause requests to be delayed or missed, as staff spend time chasing missing information (S2 L3). Priorities and exceptions are also not applied consistently, because there are no shared rules for setting priority or granting exceptions (S2 L5). As a result, requests may be handled differently depending on who handles them, which could lead to complaints about fairness and raises possible audit concerns.
+
+Staff are unsure what authority is required before information or decisions can be shared, and third parties may assist with requests (S2 L6, S2 L7). This leaves authority and roles for third parties unclear. Requests may be delayed while authority is checked, and information may be shared or decided without the right authority. It may also be unclear who is accountable for each step.
+
+Staff use different status terms for requests and planned activities. This makes it difficult to identify what is awaiting action and who is responsible for it, and the record may not show what has actually happened (S4 L2)
+
+Capacity management depends on allocations, and a visible vacancy does not necessarily mean that every requirement is satisfied (S3 L3, S3 L4). Provisional allocations can remain in place with no end point or rules for release (S3 L5). Places may therefore appear available when they are not, which may block capacity for new requests (S6 L3).
+
+Changes can affect several linked arrangements, but links between arrangements are not visible, so their dependencies are not tracked (S3 L6). Changes may therefore leave conflicting records behind or affect arrangements that nobody has checked.
+
+Staff may also work off-site where connectivity can be unreliable. This may stop them from accessing or updating records, which may cause delays or lost updates (S5 L4).
+
+The archive's problems share one root cause: its records, rules and status terms are fragmented across teams and tools. As a result, staff cannot easily see the true state of a request, who is accountable for it, or what capacity is genuinely available. This exposes the archive to rights risks, unfair or delayed decisions, and blocked capacity. The archive needs a shared, consistent way to record and track requests, ownership and allocations, with clear rules for authority and release.

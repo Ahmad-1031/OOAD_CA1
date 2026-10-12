@@ -33,7 +33,7 @@ I can't apply coloured highlighting in chat, so problems are marked in **bold** 
 
 Please check two things before you submit. First, S2 L3 and S4 L1 contain inferences that the scenario doesn't state directly. Keep them only if you can justify them, or mark them as Implied. Second, S6 L3 should not mention students unless the original scenario says so, and it doesn't.
 
-# prompt 2 #
+# Approach to creating table for step 2#
 
 prompt: for step 2: "separate symptom, problems, and consquences", I have made my table with the follwoing columns : PR ID, REF, Observation or symptom, Underlying Problem, Likely consequence. Should I go through my scenario annotation and pick out the the highlighted "Current Problems" or use the previous table to pick out the problems?
 
@@ -52,3 +52,37 @@ A practical method:
 3. Ask "what does this lead to?" to get the likely consequence, and mark it as Implied where the scenario doesn't state it.
 
 Also check that every Current Problem tag in your annotation maps to a row. Any tag with no matching row either needs a new row or should be dropped.
+
+# Checking Business Problem Statement #
+
+**Prompt:** 
+Step 3 - Business
+Problem
+.docx
+17 lines
+DOCX
+Could you check over my Step 3: Business Problem Statement and improve the wording and provide any feedback on the structure
+
+**Response:**
+
+## Structure feedback
+
+- **Lead with the overview.** The root-cause summary is the strongest point, but it sits at the end, so the reader meets the details before the big picture. Move it to the opening paragraph, then use the detail paragraphs to support it.
+- **Group related points.** The paragraphs follow the order of the Step 2 rows, which is logical for your workings but not for a reader. Consider grouping them under three headings: information and records, intake and decisions, and capacity and access.
+- **Name who is affected.** Staff, contributors, service users, managers and partners appear, but the statement never says who bears each risk. A short sentence on impact would help.
+- **Use one term for capacity.** The draft moves between "capacity", "places" and "allocations". Choose one main term and define it once.
+- **Decide on the S-references.** They show traceability, which is useful for marking. If your brief doesn't require them in the statement, keep them in a reference key or your Step 2 table instead.
+
+## Wording and grammar
+
+- "Kerry Community Digital archive" should use the same capitalisation as the full name: "Kerry Community Digital Archive".
+- "slow staff down in searching" → "slow staff down when searching".
+- "Ownerships" → "Ownership".
+- "This as a result creates rights risks" → "This creates rights risks".
+- "Requests therefore may be delayed" → "Requests may therefore be delayed".
+- "may also work off-site where connectivity" → "may also work off-site, where connectivity".
+- "block capacity to new requests" → "block capacity for new requests".
+- "the record may not show what has happened" → "the record may not show what has actually happened".
+- "Changes therefore may leave" → "Changes may therefore leave".
+- "it's records" → "its records" (no apostrophe; this is a possessive).
+- The connectivity paragraph has no full stop at the end.
