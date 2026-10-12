@@ -32,3 +32,23 @@ I can't apply coloured highlighting in chat, so problems are marked in **bold** 
 | S6 L3 | **Some allocations are being held without them being released or confirmed.** This leads to **the amount of places** available for **students** being decreased *(Students are not mentioned in the scenario.)* | Some allocations are held without being released or confirmed, which reduces the number of places available for new allocations. |
 
 Please check two things before you submit. First, S2 L3 and S4 L1 contain inferences that the scenario doesn't state directly. Keep them only if you can justify them, or mark them as Implied. Second, S6 L3 should not mention students unless the original scenario says so, and it doesn't.
+
+# prompt 2 #
+
+prompt: for step 2: "separate symptom, problems, and consquences", I have made my table with the follwoing columns : PR ID, REF, Observation or symptom, Underlying Problem, Likely consequence. Should I go through my scenario annotation and pick out the the highlighted "Current Problems" or use the previous table to pick out the problems?
+
+Response:
+
+Use both, but start from the Step 1 table.
+
+The Step 1 table already gives you the observations, and each row has a Ref you can carry into your Step 2 REF column. That keeps the chain traceable: Step 1 evidence → Step 2 symptom → problem → consequence.
+
+Then check your annotation's "Current Problem" tags against it. The tags tell you which problems you identified during annotation, so use them to catch any you missed in Step 1. Don't copy them straight across, though, because a Current Problem tag often mixes a symptom with its cause. For example, "making it difficult to identify what is awaiting action and who is responsible" (S4 L2) is a consequence, and the underlying problem is that status terms differ between teams.
+
+A practical method:
+
+1. Take each Step 1 row and write the observation as the symptom, in neutral terms.
+2. Ask "why does this happen?" to get the underlying problem. This is often where you'll use the Current Problem tags.
+3. Ask "what does this lead to?" to get the likely consequence, and mark it as Implied where the scenario doesn't state it.
+
+Also check that every Current Problem tag in your annotation maps to a row. Any tag with no matching row either needs a new row or should be dropped.

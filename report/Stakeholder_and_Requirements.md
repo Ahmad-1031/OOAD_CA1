@@ -24,4 +24,16 @@
 | S6 L3 | Administrator: "Provisional arrangements can block capacity long after the original request has stalled." | Some allocations are being held without them being released or confirmed. This leads to the amount of places available for students being decreased |
 
 
-# Step 2: Separate symptoms, problems, and consequences
+# Step 2: Separate Symptoms, Problems, and Consequences
+
+| PR ID | REF | Observation or symptom | Underlying Problem | Likely consequence |
+|---|---|---|---|---|
+| PR1 | S1 L2, S4 L1 | Contribution information is stored in different files, notes, folders, spreadsheets and messages | Fragmented records | Information about a contribution may conflict between sources and slow down searching across records |
+| PR2 | S2 L2 | Ownership and permissions for material are not always certain | Unclear ownership | Material may be prepared for publication before rights are confirmed, which may create a rights risk |
+| PR3 | S2 L6, S2 L7 | Staff are unsure what authority is required before information or decisions can be shared, and third parties assist with requests | Unclear authority and roles for third parties | Requests may be delayed while authority is checked. Information may be shared or decided without the right authority, and it may be unclear who is accountable |
+| PR4 | S2 L3 | Requests arrive through several channels and may be incomplete. | No single point of entry | Requests can be delayed or missed, as staff spend time chasing information |
+| PR5 | S2 L5 | Priorities and exceptions are not applied consistently | No shared rules for setting priority or granting exceptions | Requests are handled differently depending on who handles them, which could cause complaints over fairness |
+| PR6 | S3 L3, S6 L3 | Provisional allocations remain in place while essential information is missing, long after the original request has stalled | Provisional allocations have no end point or any rules for release | Places may appear available when they are not, which may reduce the capacity open to new requests |
+| PR7 | S3 L6 | Changes can affect several linked arrangements. | Links between arrangements are not visible, so their dependencies are not tracked | A change may leave conflicting records behind or affect arrangements nobody checked |
+| PR8 | S5 L4 | Connectivity may be unreliable during off-site work. | The process does not account for offline working | Staff may be unable to access or update records while off-site, which may cause delays or lost updates |
+| PR9 | S4 L2 | Teams use status terms differently, and planned activities can be changed, partially completed, paused or withdrawn | Activity status is not recorded in a shared, standard form | It is difficult to identify what is awaiting action and who is responsible, and the record may not show what happened |
