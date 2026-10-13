@@ -59,3 +59,27 @@ Changes can affect several linked arrangements, but links between arrangements a
 Staff may also work off-site where connectivity can be unreliable. This may stop them from accessing or updating records, which may cause delays or lost updates (S5 L4).
 
 The archive's problems share one root cause: its records, rules and status terms are fragmented across teams and tools. As a result, staff cannot easily see the true state of a request, who is accountable for it, or what capacity is genuinely available. This exposes the archive to rights risks, unfair or delayed decisions, and blocked capacity. The archive needs a shared, consistent way to record and track requests, ownership and allocations, with clear rules for authority and release.
+
+# Step 4: System Purpose Statement
+
+The proposed Digital Archive Contribution Service will support coordinators, service users, administrators, partner representatives, reviewers, managers and staff in handling contributions submitted to the Kerry Community Digital Archive.
+
+**Intake and records.** The service will provide a single point of entry for contributions (PR4) and store information about each contribution in one shared record. That record will show the status of the material and the stage it has reached in the review process (PR1). Ownership of submitted material will be made clear before publication (PR2), which should reduce rights risks.
+
+**Rules, authority and decisions.** The service will set clear and consistent rules for contributions and make clear who has authority to handle each item, which should reduce delays in the review process (PR3). It will apply clear priorities and exceptions so that requests are handled fairly and consistently (PR5). Staff will use standardised terms for activity status, which should reduce confusion between teams and improve the flow of requests (PR9).
+
+**Capacity, links and access.** The service will manage provisional allocations with defined release rules, so that capacity is freed for new requests (PR6). It will also make the links between arrangements visible, so that changes do not leave conflicting records or unnoticed knock-on effects (PR7). The service will support staff working off-site, where connectivity may be unreliable, so that they can still access the records they need (PR8).
+
+# Step 5: Scope
+
+| ID | Ref | In scope for initial release | ID | Ref | Out of scope for initial release |
+|---|---|---|---|---|---|
+| INS1 | PR1 | Shared Contribution Record | OTS1 | S5 L6 | Specialist Professional Systems |
+| INS2 | PR2 | Ownership and Permissions Tracking | OTS2 | S5 L6 | Financial Accounting |
+| INS3 | PR3 | Authority Management | OTS3 | S5 L6 | Unrelated Public Website Functions |
+| INS4 | PR4 | Requests Management | | | |
+| INS5 | PR5 | Priority and Exceptions Rules | | | |
+| INS6 | PR6 | Provisional Allocations Management | | | |
+| INS7 | PR7 | Linked Arrangements Tracking | | | |
+| INS8 | PR8 | Off-site Records Access | | | |
+| INS9 | PR9 | Standard Activity Status Terms | | | |
