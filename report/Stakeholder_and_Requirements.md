@@ -83,3 +83,17 @@ The proposed Digital Archive Contribution Service will support coordinators, ser
 | INS7 | PR7 | Linked Arrangements Tracking | | | |
 | INS8 | PR8 | Off-site Records Access | | | |
 | INS9 | PR9 | Standard Activity Status Terms | | | |
+
+# Step 6: Stakeholder Analysis
+
+| ID | Ref | Stakeholder | Goals | Concerns | Influence | Expected interaction |
+|---|---|---|---|---|---|---|
+| SKH1 | S1 L1, S6 L2, S2 L3, S2 L5 *(contributors are treated as service users: Implied)* | Contributor | Submit contributions for publication and track status *(tracking status: S6 L2, applied to contributors, Implied)* | Delayed or missed requests, and unclear status | Medium | Submit contribution items, track status of contribution and view decisions *(Implied)* |
+| SKH2 | S5 L1, S3 L5, S3 L6 | Coordinator | See information about unallocated requests, provisional arrangements, capacity conflicts, overdue actions and incomplete records | Missing information about provisional allocations and knock-on effects of linked arrangements | High | View relevant information to manage provisional allocations and resolve capacity conflicts, overdue actions and incomplete records |
+| SKH3 | S2 L4, S2 L7, S3 L6, S4 L1 | Staff | Process requests and preserve information about requests | Searching through fragmented records, uncertainty about authority, and keeping earlier versions of information | High | Process requests efficiently, record progress, and preserve current and earlier revisions of requests |
+| SKH4 | S5 L2, S6 L4 | External partners | Receive relevant information required for their role | Receiving irrelevant and extra information about case history | Medium | Receive and view relevant information for their role |
+| SKH5 | S5 L3, S6 L6, S4 L1 | Management | Receive summary reports on activity status and outcomes | Fragmented information reduces the accuracy of summary reports | High | Receive and view summary reports on the status and outcomes of submitted items |
+| SKH6 | S5 L3 | Funders | Receive summary reports without inappropriate data | Receiving reports with unnecessary personal or commercially sensitive data | Medium | Receive appropriate summary reports without sensitive data |
+| SKH7 | S2 L6, S2 L5, S2 L3 | Third parties | Assist with request processing | Unsure of priorities and rules, and receiving incomplete information | Medium | Assist with processing of requests for publication |
+| SKH8 | S6 L3, S3 L5 | Administrator | View blocked capacity and release stalled requests | Missing essential information to release stalled requests | Medium | Monitor provisional allocations, release stalled requests and increase capacity for new requests |
+| SKH9 | S6 L5, S4 L5, S4 L6 | Reviewer | Add new information without erasing information about earlier decisions | Earlier evidence may be overwritten. Without it, history changes cannot be tracked | Medium | Review earlier evidence, add new information and revise arrangements |
