@@ -97,3 +97,16 @@ The proposed Digital Archive Contribution Service will support coordinators, ser
 | SKH7 | S2 L6, S2 L5, S2 L3 | Third parties | Assist with request processing | Unsure of priorities and rules, and receiving incomplete information | Medium | Assist with processing of requests for publication |
 | SKH8 | S6 L3, S3 L5 | Administrator | View blocked capacity and release stalled requests | Missing essential information to release stalled requests | Medium | Monitor provisional allocations, release stalled requests and increase capacity for new requests |
 | SKH9 | S6 L5, S4 L5, S4 L6 | Reviewer | Add new information without erasing information about earlier decisions | Earlier evidence may be overwritten. Without it, history changes cannot be tracked | Medium | Review earlier evidence, add new information and revise arrangements |
+
+# Step 7: Functional Requirements
+# Step 8: Non-Functional Requirements
+# Step 9: Rules, Assumptions, Constraints & Risks
+# Step 10: Stakeholder Clarification Questions:
+
+1. What information is required before a request is ready for decision
+2. How eligibility, priority and exceptions should be applied
+3. What authority is required when another person acts for the requester
+4. When provisional allocations should expire or become confirmed
+5. who may approve changes, substitutions or withdrawal
+6. how versions, reviews and outstanding actions should be related
+7. which information may be shared with staff, partners and funders
