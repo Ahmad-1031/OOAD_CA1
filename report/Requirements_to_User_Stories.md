@@ -23,24 +23,24 @@
 
 | Story ID | Requirement | Role-Goal-Benefit user story|
 |---|---|---|
-|US01|FR01|As a staff member, I want to view information about a contribution through a single shared record, so I do not have to search across separate records
-|US02|FR02|As a contributor, I want to view rights and permissions of my submitted material to ensure they are correct
-|US03|FR03|As a staff member, I want to record the authority of each request before third parties are involved, so that they are only involved with the right authority in place
-|US04|FR04|As a contributor, I want to submit my material for publication, so that I can start a request and check its status
-|US05|FR05|As a staff member, I want to apply the agreed priorities and exceptions to requests, so that requests are handled consistently
-|US06|FR06|As an administrator, I want to view blocked capacity and release stalled requests, so that the capacity for new requests is increased
-|US07|FR07|As a reviewer, I want to view the dependencies between linked arrangements, so that I can understand the impact of a change  on related arrangements before making it
-|US08|FR08| As a staff member, I want to access records off-site when connectivity is unreliable, so that I can keep working on requests
-|US09|FR09|As staff member, I want preserve an item in the archive, so that it can be kept safely until it is  released|
-|US10|FR10|As a staff member, I want to set the activity status of request using the agreed standard terms, so that everyone working on the request has a consistent understanding of its current progress
-|US11|FR11|As a staff member, I want to send external partners only the information required by their role, so that they receive what they need without unnecessary case history
-|US12|FR12|As a coordinator, I want to view unallocated requests, provisional allocations, capacity conflicts, overdue actions and incomplete records, so that I can coordinate requests and capacity
+|UC01|FR01|As a staff member, I want to view information about a contribution through a single shared record, so I do not have to search across separate records
+|UC02|FR02|As a contributor, I want to view rights and permissions of my submitted material to ensure they are correct
+|UC03|FR03|As a staff member, I want to record the authority of each request before third parties are involved, so that they are only involved with the right authority in place
+|UC04|FR04|As a contributor, I want to submit my material for publication, so that I can start a request and check its status
+|UC05|FR05|As a staff member, I want to apply the agreed priorities and exceptions to requests, so that requests are handled consistently
+|UC06|FR06|As an administrator, I want to view blocked capacity and release stalled requests, so that the capacity for new requests is increased
+|UC07|FR07|As a reviewer, I want to view the dependencies between linked arrangements, so that I can understand the impact of a change  on related arrangements before making it
+|UC08|FR08| As a staff member, I want to access records off-site when connectivity is unreliable, so that I can keep working on requests
+|UC09|FR09|As staff member, I want preserve an item in the archive, so that it can be kept safely until it is  released|
+|UC10|FR10|As a staff member, I want to set the activity status of request using the agreed standard terms, so that everyone working on the request has a consistent understanding of its current progress
+|UC11|FR11|As a staff member, I want to send external partners only the information required by their role, so that they receive what they need without unnecessary case history
+|UC12|FR12|As a coordinator, I want to view unallocated requests, provisional allocations, capacity conflicts, overdue actions and incomplete records, so that I can coordinate requests and capacity
 
 <br>
 
 ## Task 2: Acceptance Criteria
 
-### Selected User Story: US01
+### Selected User Story: UC01
 
 > As a staff member, I want to view information about a contribution through a single shared record, so I do not have to search across separate records
 
@@ -75,7 +75,7 @@ And the record shows the ownership status
 
 <br><br>
 
-### Selected User Story: US002
+### Selected User Story: UC02
 > As a contributor, I want to view rights and permissions of my submitted material to ensure they are correct
 
 #### Acceptance Criteria
@@ -109,7 +109,7 @@ And the rights and permissions of other contrbutors material are now shown
 
 <br><br>
 
-### Selected User Story: US03
+### Selected User Story: UC03
 
 >  As a staff member, I want to record the authority of each request before third parties are involved, so that they are only involved with the right authority in place
 
@@ -144,7 +144,7 @@ And assignment of the authority is stored in the request's history
 
 <br><br>
 
-### Selected User Story: US04
+### Selected User Story: UC04
 
 > As a contributor, I want to submit my material for publication, so that I can start a request and check its status
 
@@ -184,7 +184,7 @@ And the contributor can see the current status of the request
 
 <br><br>
 
-### Selected User Story: US05
+### Selected User Story: UC05
 
 > As a staff member, I want to apply the agreed priorities and exceptions to requests, so that requests are handled consistently
 
@@ -218,7 +218,7 @@ And the priority or exception is visible to other staff members working on the r
 
 <br><br>
 
-### Selected User Story: US06
+### Selected User Story: UC06
 
 > As an administrator, I want to view blocked capacity and release stalled requests, so that the capacity for new requests is increased
 
@@ -243,7 +243,7 @@ And the priority or exception is visible to other staff members working on the r
 
 <br><br>
 
-### Selected User Story: US07
+### Selected User Story: UC07
 
 > As a reviewer, I want to view the dependencies between linked arrangements, so that I can understsnd the impact of a change on related arrangements before making it
 
@@ -264,7 +264,7 @@ And the priority or exception is visible to other staff members working on the r
 
 <br><br>
 
-### Selected User Story: US08
+### Selected User Story: UC08
 
 > As a staff member, I want to access records off-site when connectivity is unreliable, so that I can keep working on requests
 
@@ -286,7 +286,7 @@ And the priority or exception is visible to other staff members working on the r
 
 <br><br>
 
-### Selected User Story: US09
+### Selected User Story: UC09
 
 > As staff member, I want preserve an item in the archive, so that it can be kept safely until it is  released
 
@@ -294,20 +294,22 @@ And the priority or exception is visible to other staff members working on the r
 
 | ID | Observable acceptance condition |
 |---|---|
-| | |
+|A1 |Item exists in the archive |
+|A2 |Staff member can preserve the item|
+|A3 |Item is shown as preserved on the system
 
 
 
 
 #### Questions Revealed
 
-1.
-2.
-3.
+1. What conditions make a item applicable to preserve
+2. Who has authority to view the preserved item
+
 
 <br><br>
 
-### Selected User Story: US10
+### Selected User Story: UC10
 
 > As a staff member, I want to set the activity status of request using the agreed standard terms, so that everyone working on the request has a consistent understanding of its current progress
 
@@ -315,39 +317,43 @@ And the priority or exception is visible to other staff members working on the r
 
 | ID | Observable acceptance condition |
 |---|---|
-| | |
+|A1 |Request exits in the system |
+|A2 |Staff can set activity of a request status from agreed terms|
+|A3 |Activity status is visible to others staff members working on the request|
 
 
 
 #### Questions Revealed
 
-1.
-2.
-3.
+1. Are standard acitivty terms agreed by the staff or configured into the system
+
 
 <br><br>
 
-### Selected User Story: US11
+### Selected User Story: UC11
 
-> The system shall allow staff to send external partners only the information required for their role.
+> As a staff member, I want to send external partners only the information required by their role, so that they receive what they need without unnecessary case history
+
 
 #### Acceptance Criteria
 
 | ID | Observable acceptance condition |
 |---|---|
-| | |
+|A1 |The staff member can select and shsare information relevant ot the partner's rolel |
+|A2 |The information disclosed excludes sensitive data|
+|A3 |The staff member can review the inforamtion being shared before sending it|
 
 
 
 #### Questions Revealed
 
-1.
-2.
-3.
+1. Who is resposible for ensusring sensitive information is not disclosed? the staff member, system or both?
+
+
 
 <br><br>
 
-### Selected User Story: US12
+### Selected User Story: UC12
 
 > As a coordinator, I want to view unallocated requests, provisional allocations, capacity conflicts, overdue actions and incomplete records, so that I can coordinate requests and capacity
 
@@ -356,28 +362,53 @@ And the priority or exception is visible to other staff members working on the r
 
 | ID | Observable acceptance condition |
 |---|---|
-| | |
+|A1 |The coordinator can view information relevant to their roles |
+|A2 |The coordinator can select unallocated requests, provisional allocations, capacity conflicts, overdue actions and incomplete record|
+
 
 
 
 #### Questions Revealed
 
-1.
-2.
-3.
+1. Is sensntive data still hidden in incomplete records
 
 <br><br>
 
 
 ## Task 3: Identify Actors and Use Cases
 
-### Actor Decisions
+<br>
+
+### Actor Catalogue
+| Actor or Stakeholder | Type | Goal or Interest | Direct Interaction |  
+|---|---|---|---|
+| Contributor | Primary Actor | Submit contributions for publication and track status | Yes |
+| Coordinator | Primary Actor | See information about unallocated requests, provisional arrangements, capacity conflicts, overdue actions and incomplete records | Yes |
+| Staff | Primary Actor | Process requests, set standard terms, preserve items| Yes |
+| External Partners | Offstage Stakeholder | Receive relevant information required for their role | No |
+| Management | Offstage Stakeholder | Receive and view summary reports on the status and outcomes of submitted items | No |
+| Funders | Offstage Stakeholder | Receive appropriate summary reports without sensitive data | No |
+| Thid Party | Supporting Actor | Assist with processing of requests for publication | No |
+| Administrator | Primary Actor | View blocked capacity and release stalled requests | Yes |
+| Reviewer | Primary Actor |  Add new information without erasing information about earlier decisions | Yes |
+
 
 ## Use-Case Catalogue
 
-| Use Case | Primary Actor | Meaningful Outcome | Source Requirement |
-|---|---|---|---|
-| | | | |
+|ID | Use Case | Primary Actor | Meaningful Outcome | Source Requirement |
+|---|---|---|---|---|
+| UC01 | View Contributon Record | Staff | Contributon information is displayed in a shared record without searching across separate records | FR01 |
+| UC02 | View Rights and Permissionns | Contributor | Can view the rights and permissions of material they have submitted | FR02|
+| UC03 | Record Request Authority | Staff | Allows staff to record authority before information about a request are disclosed with third parties | FR03 |
+| UC04 | Submit Request | Contributor | Allows contributor to submit material for publicaton | FR04 |
+| UC05 | Apply Priorities and Exeptions | Staff | Requests are handled consistenly by applyg agreed priorites and exeptions |  FR05| 
+| UC06 | Release Stalled Allocations | Administrator | Capacity held by stalled provisional becomes available for new requests | FR06 |
+| UC07 | Manage Linked Arragements | Reviewer | Knock-on effect of linked arragements is displayed before cahnges can be made | FR07 |
+| UC08 | Access Records Offline | Staff | Staff can continue working on request-realted tasks offline when connectivity is unreliable | Fr08 |
+| UC09 | Preserve Archive Item | Staff | Item is safely retained if not approved public access | FR09 |
+| UC10 | Set Actvity Status | Staff | Staff share a consistant understanding of a request's status | FR10 |
+| UC11 | Review and Send Partner Information |Staff | External partners receive the information needed for their role without unnecessary case history or inappropriate disclosure of sensitive information | FR11 |
+| UC12 | View Coordinate Overview | Coordinator |  Coordinator can view issues affecting request capacity | FR12 |
 
 ## Task 4: Use-Case Diagram
 
