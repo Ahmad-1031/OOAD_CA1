@@ -106,13 +106,13 @@ The proposed Digital Archive Contribution Service will support coordinators, ser
 |---|---|---|---|
 | FR01 | The system shall allow staff to view information about a contribution through a single record. | Should | Staff (SKH3), INS1 |
 | FR02 | The system shall allow a contributor to view rights and permissions confirmation of submitted material. | Should |S Contributor (SKH1), INS2 |
-| FR03 | The system shall allow staff staff to verify third party authorisation before a request's information is disclosed. | Must | Staff (SKH3), INS3 |
+| FR03 | The system shall allow staff to verify third party authorisation before a request's information is disclosed. | Must | Staff (SKH3), INS3 |
 | FR04 | The system shall allow a contributor to submit a request through a single point of entry for publication and track its status. | Must | Contributor (SKH1), INS4, INS9 |
 | FR05 | The system shall allow staff to apply priorities and exceptions to requests. | Must | Staff (SKH3), INS5 |
 | FR06 | The system shall allow an administrator to view blocked capacity and release stalled requests. | Should | Administrator (SKH8), INS6 |
 | FR07 | The system shall allow reviewers to view dependencies between linked arrangements. | Could | Reviewer (SKH9), INS7 |
 | FR08 | The system shall allow staff to access records off-site when connectivity is unreliable. | Should | Staff (SKH3), INS8 |
-| FR09 | The system shall allow third parties to assist with the processing of requests. | Must | Third parties (SKH7), INS3 |
+| FR09 | The system shall allow staff to preserve an item in the archive without approving it for public access | Must | Staff (SKH3), INS1 |
 | FR10 | The system shall allow staff to set an activity status on a request from the agreed standard terms. | Must | Staff (SKH3), INS9 |
 | FR11 | The system shall allow staff to send external partners only the information required for their role. | Must | Staff (SKH3), External partners (SKH4), INS3 |
 | FR12 | The system shall show coordinators unallocated requests, provisional allocations, capacity conflicts, overdue actions and incomplete records. | Must | Coordinator (SKH2), INS1, INS6 |

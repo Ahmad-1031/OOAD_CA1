@@ -86,3 +86,51 @@ Could you check over my Step 3: Business Problem Statement and improve the wordi
 - "Changes therefore may leave" → "Changes may therefore leave".
 - "it's records" → "its records" (no apostrophe; this is a possessive).
 - The connectivity paragraph has no full stop at the end.
+  
+  <br><br>
+
+# Consdering alternative perspectives
+
+Gave use cases to consider alterntive perspectives and potential gaps I might missed e.g. asking what some the quesitons revelaed would have been for uses cases
+
+Helped me decide what other things to consider and if it was relevant.
+
+Promt Used : What are some possible questions revealed about this use case "**### Selected User Story: US08**
+
+\> As a staff member, I want to access records off-site when connectivity is unreliable, so that I can keep working on requests"
+
+Answer: 
+
+For US08, the main questions revealed relate to offline access, the tasks staff can perform without connectivity, data security, and how changes are saved and synchronised when the connection returns.
+
+User story:
+
+> As a staff member, I want to access records off-site when connectivity is unreliable, so that I can keep working on requests.
+
+## Possible questions revealed
+
+| Area                        | Questions to clarify                                                                                                                                                                   |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Accessing records        | Which records should staff be able to access off-site? Can they access all records or only requests assigned to them? Must records be downloaded or synchronised before going offline? |
+| 2. Offline functionality    | Can staff only view records, or can they also edit details, add notes and update request statuses while offline?                                                                       |
+| 3. Data accuracy            | How can staff tell when a record was last updated? Should the system warn them when information may be out of date?                                                                    |
+| 4. Security and permissions | How is sensitive information protected when stored on a device? What happens if a staff member's access permissions change while they are offline?                                     |
+| 5. Synchronisation          | What happens when connectivity returns? Are offline changes synchronised automatically? How are conflicting changes handled if another staff member has updated the same record?       |
+
+## Five key questions to prioritise
+
+1. Which records need to be available offline? All records, assigned requests only, or selected records downloaded in advance?
+2. What tasks must staff be able to perform without connectivity? Viewing records, editing requests, adding notes, or changing statuses?
+3. How will the system protect sensitive information on devices used off-site?
+4. How will changes made offline be saved and synchronised when connectivity returns?
+5. What happens if two staff members make conflicting changes to the same request?
+
+## Additional scenarios to consider
+
+- What happens if the device loses connectivity while a staff member is editing a record?
+- Can staff see which changes have been saved locally and which have synchronised successfully?
+- What happens if the device runs out of storage while offline?
+- How long should records remain accessible without synchronisation?
+- Can staff continue working if connectivity repeatedly drops in and out?
+
+
