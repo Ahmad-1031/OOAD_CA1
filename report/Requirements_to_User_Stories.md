@@ -59,10 +59,10 @@
 
 ```gherkin
 Given a contribution has been submitted
-And and the contribution has a current activity status, review stage, and ownership recorded
-When an authenticated staff member viws the contribution's record
+And the contribution has a current activity status, review stage, and ownership recorded
+When an authenticated staff member views the contribution's record
 Then the record shows the current activity status
-And the record shows reviw stage
+And the record shows review stage
 And the record shows the ownership status
 ```
 
@@ -97,7 +97,7 @@ And the contribution exists in the system
 And the contribution has rights and permissions recorded
 When a contributor views their contribution
 Then the rights and permissions of their contribution are shown
-And the rights and permissions of other contrbutors material are now shown
+And the rights and permissions of other contributors material are now shown
 ```
 
 #### Questions Revealed
@@ -139,8 +139,8 @@ And assignment of the authority is stored in the request's history
 
 1. Can a request be assigned to more than one third party, and does it need separate authority
 2. What level or role should a staff member have to record authority
-3. Can authority expire and if so how dose the system handle it
-4. What happens to an already assigned thid party if authority is changed or revoked
+3. Can authority expire and if so how does the system handle it
+4. What happens to an already assigned third party if authority is changed or revoked
 
 <br><br>
 
@@ -155,17 +155,17 @@ And assignment of the authority is stored in the request's history
 |A1 |An allocation is open to receive a request |
 |A2 |The contributor supplies information for the request|
 |A3 |The request is recorded in the system |
-|A4 |The contributor sees the request has been recived|
-|A5 |A request with insuffcient information is shown not ready for publication| 
+|A4 |The contributor sees the request has been received|
+|A5 |A request with insufficient information is shown not ready for publication| 
 |A6 |The status of a request is visible to the contributor 
 
 #### Given When Then
 
 ```gherkin
 Given an allocation is open to receive a request
-When the contributor enters the requried details and attches the material
+When the contributor enters the required details and attaches the material
 Then the request is recorded in the system
-And the contributor is shown a confirmation that the request has been recieved
+And the contributor is shown a confirmation that the request has been received
 And the contributor can see the current status of the request
 ```
 
@@ -192,27 +192,27 @@ And the contributor can see the current status of the request
 
 | ID | Observable acceptance condition |
 |---|---|
-|A1 |The staff is authenticated to apply priorties and exceptions |
-|A2 |The system allows staff to apply a priority to a request from the agreed priorites|
+|A1 |The staff is authenticated to apply priorities and exceptions |
+|A2 |The system allows staff to apply a priority to a request from the agreed priorities|
 |A3 |An exception can be applied only with a recorded reason|
 |A4 |The applied priority and any exceptions are visible to staff working on the request|
-|A5 |Changes to a request's priority are recorded in the request hisotry, including who made the changes and when
+|A5 |Changes to a request's priority are recorded in the request history, including who made the changes and when
 
 
 #### Given When Then
 
 ```gherkin
-Given the staff is authenticted to apply priorites and exceptions to a request
-When the staff attempts to apply a priority or exeption
-Then the system provides the agreed priorites to apply
+Given the staff is authenticated to apply priorities and exceptions to a request
+When the staff attempts to apply a priority or exception
+Then the system provides the agreed priorities to apply
 And the priority is recorded in the request's history
 And the priority or exception is visible to other staff members working on the request
 ```
 
 #### Questions Revealed
 
-1. What determines priority? submisson date, urgency, request type or another factor
-2. What excetpions are permitted, and who can approve them
+1. What determines priority? submission date, urgency, request type or another factor
+2. What exceptions are permitted, and who can approve them
 3. How does the system handle two requests with the same priority
 4. Does reason for an exception need to be recorded whenever an exception is applied or changed
 
@@ -231,30 +231,30 @@ And the priority or exception is visible to other staff members working on the r
 |A3 |The administrator can view the details and current status of a stalled request before releasing it|
 |A4 |The administrator can release the stalled request
 |A5 |The system updates the available capacity to reflect the release
-|A6 |The system shows a confirmation message that the requeust has been released and capacity made available
+|A6 |The system shows a confirmation message that the request has been released and capacity made available
 
 
 #### Questions Revealed
 
 1. What level of detail can the administrator see about the request
 2. What defines a stalled request
-3. What does releasing a stalled request mean?, cancel, remove, or return capaity to the available pool
+3. What does releasing a stalled request mean?, cancel, remove, or return capacity to the available pool
 4. How is blocked capacity calculated
 
 <br><br>
 
 ### Selected User Story: UC07
 
-> As a reviewer, I want to view the dependencies between linked arrangements, so that I can understsnd the impact of a change on related arrangements before making it
+> As a reviewer, I want to view the dependencies between linked arrangements, so that I can understand the impact of a change on related arrangements before making it
 
 #### Acceptance Criteria
 
 | ID | Observable acceptance condition |
 |---|---|
 |A1 |The Reviewer is authenticated to view and make changes |
-|A2 |The reviewer can view the linked arragments to a selected arrangement|
-|A3 |The system shows the affected linked arragments if a change is proposed
-|A4 |The systme confirms the change and display the impacted linked arrangements 
+|A2 |The reviewer can view the linked arrangements to a selected arrangement|
+|A3 |The system shows the affected linked arrangements if a change is proposed
+|A4 |The system confirms the change and display the impacted linked arrangements 
 
 
 #### Questions Revealed
@@ -272,7 +272,7 @@ And the priority or exception is visible to other staff members working on the r
 
 | ID | Observable acceptance condition |
 |---|---|
-|A1 |staff member can record progress off site when connect is unreliable |
+|A1 |staff member can record progress off site when connection is unreliable |
 |A2 |The system indicates when the staff member is working offline|
 |A3 |Changes are saved locally until connectivity is restored|
 |A4 |When connection returns locally saved changes are synchronised in the shared record|
@@ -280,9 +280,9 @@ And the priority or exception is visible to other staff members working on the r
 
 #### Questions Revealed
 
-1. Which records are available offline and does staff need to download or synchronise beforeing going off-site
-2. How is senstive information protected when stored on a device
-3. What happens when connectivity reeturns? Are changes uploaded automatically and what happens if two staff members have edidted the same shared record?
+1. Which records are available offline and does staff need to download or synchronise before going off-site
+2. How is sensitive information protected when stored on a device
+3. What happens when connectivity returns? Are changes uploaded automatically and what happens if two staff members have edited the same shared record?
 
 <br><br>
 
@@ -317,7 +317,7 @@ And the priority or exception is visible to other staff members working on the r
 
 | ID | Observable acceptance condition |
 |---|---|
-|A1 |Request exits in the system |
+|A1 |Request exists in the system |
 |A2 |Staff can set activity of a request status from agreed terms|
 |A3 |Activity status is visible to others staff members working on the request|
 
@@ -325,7 +325,7 @@ And the priority or exception is visible to other staff members working on the r
 
 #### Questions Revealed
 
-1. Are standard acitivty terms agreed by the staff or configured into the system
+1. Are standard activity terms agreed by the staff or configured into the system
 
 
 <br><br>
@@ -339,15 +339,15 @@ And the priority or exception is visible to other staff members working on the r
 
 | ID | Observable acceptance condition |
 |---|---|
-|A1 |The staff member can select and shsare information relevant ot the partner's rolel |
+|A1 |The staff member can select and share information relevant to the partner's role |
 |A2 |The information disclosed excludes sensitive data|
-|A3 |The staff member can review the inforamtion being shared before sending it|
+|A3 |The staff member can review the information being shared before sending it|
 
 
 
 #### Questions Revealed
 
-1. Who is resposible for ensusring sensitive information is not disclosed? the staff member, system or both?
+1. Who is responsible for ensuring sensitive information is not disclosed? the staff member, system or both?
 
 
 
@@ -370,7 +370,7 @@ And the priority or exception is visible to other staff members working on the r
 
 #### Questions Revealed
 
-1. Is sensntive data still hidden in incomplete records
+1. Is sensitive data still hidden in incomplete records
 
 <br><br>
 
@@ -388,7 +388,7 @@ And the priority or exception is visible to other staff members working on the r
 | External Partners | Offstage Stakeholder | Receive relevant information required for their role | No |
 | Management | Offstage Stakeholder | Receive and view summary reports on the status and outcomes of submitted items | No |
 | Funders | Offstage Stakeholder | Receive appropriate summary reports without sensitive data | No |
-| Thid Party | Supporting Actor | Assist with processing of requests for publication | No |
+| Third Party | Supporting Actor | Assist with processing of requests for publication | No |
 | Administrator | Primary Actor | View blocked capacity and release stalled requests | Yes |
 | Reviewer | Primary Actor |  Add new information without erasing information about earlier decisions | Yes |
 
@@ -397,23 +397,91 @@ And the priority or exception is visible to other staff members working on the r
 
 |ID | Use Case | Primary Actor | Meaningful Outcome | Source Requirement |
 |---|---|---|---|---|
-| UC01 | View Contributon Record | Staff | Contributon information is displayed in a shared record without searching across separate records | FR01 |
-| UC02 | View Rights and Permissionns | Contributor | Can view the rights and permissions of material they have submitted | FR02|
+| UC01 | View Contribution Record | Staff | Contribution information is displayed in a shared record without searching across separate records | FR01 |
+| UC02 | View Rights and Permissions | Contributor | Can view the rights and permissions of material they have submitted | FR02|
 | UC03 | Record Request Authority | Staff | Allows staff to record authority before information about a request are disclosed with third parties | FR03 |
-| UC04 | Submit Request | Contributor | Allows contributor to submit material for publicaton | FR04 |
-| UC05 | Apply Priorities and Exeptions | Staff | Requests are handled consistenly by applyg agreed priorites and exeptions |  FR05| 
+| UC04 | Submit Request | Contributor | Allows contributor to submit material for publication | FR04 |
+| UC05 | Apply Priorities and Exceptions | Staff | Requests are handled consistently by applying agreed prioriites and exceptions |  FR05| 
 | UC06 | Release Stalled Allocations | Administrator | Capacity held by stalled provisional becomes available for new requests | FR06 |
-| UC07 | Manage Linked Arragements | Reviewer | Knock-on effect of linked arragements is displayed before cahnges can be made | FR07 |
-| UC08 | Access Records Offline | Staff | Staff can continue working on request-realted tasks offline when connectivity is unreliable | Fr08 |
+| UC07 | Manage Linked Arrangements | Reviewer | Knock-on effect of linked arrangements is displayed before changes can be made | FR07 |
+| UC08 | Access Records Offline | Staff | Staff can continue working on request-related tasks offline when connectivity is unreliable | Fr08 |
 | UC09 | Preserve Archive Item | Staff | Item is safely retained if not approved public access | FR09 |
-| UC10 | Set Actvity Status | Staff | Staff share a consistant understanding of a request's status | FR10 |
+| UC10 | Set Activity Status | Staff | Staff share a consistent understanding of a request's status | FR10 |
 | UC11 | Review and Send Partner Information |Staff | External partners receive the information needed for their role without unnecessary case history or inappropriate disclosure of sensitive information | FR11 |
-| UC12 | View Coordinate Overview | Coordinator |  Coordinator can view issues affecting request capacity | FR12 |
+| UC12 | View Coordination Overview | Coordinator |  Coordinator can view issues affecting request capacity | FR12 |
 
 ## Task 4: Use-Case Diagram
+
+### Plant UML Code
+
+
+<details>
+<summary><strong>Task 4: Use-Case Diagram</strong></summary>
+
+### PlantUML Code
+
+```plantuml
+@startuml
+
+left to right direction
+
+actor Contributor
+actor Staff
+actor Coordinator
+actor Administrator
+actor Reviewer
+
+rectangle "Archive Publication Service" {
+
+    usecase "View Rights and Permissions" as UC02
+    usecase "Submit Request" as UC04
+    usecase "View Contribution Record" as UC01
+    usecase "Record Request Authority" as UC03
+    usecase "Apply Priorities and Exceptions" as UC05
+    usecase "Record Records Offline" as UC08
+    usecase "Preserve Archive Item" as UC09
+    usecase "Set Activity Status" as UC10
+    usecase "Review and Send Partner Information" as UC11
+    usecase "Release Stalled Allocations" as UC06
+    usecase "Manage Linked Arrangements" as UC07
+    usecase "View Coordination Overview" as UC12
+}
+
+Contributor --> UC02
+Contributor --> UC04
+
+Staff --> UC01
+Staff --> UC03
+Staff --> UC05
+Staff --> UC08
+Staff --> UC09
+Staff --> UC10
+Staff --> UC11
+
+Administrator --> UC06
+Reviewer --> UC07
+Coordinator --> UC12
+
+@enduml
+```
+
+</details>
+
+![Description of image](..\diagrams\UseCaseDiagram.png)
 
 ## Task 5: Traceability
 
 | Business problem or stakeholder goal | Requirement | User Story | Acceptance Evidence | Use Case |
 |---|---|---|---|---|
-| | | | | |
+|Contribution information is stored in different files, notes, folders, spreadsheets and messages | FR01 |UC01 | Staff can view contribution in a single shared record |View Contribution Record |
+|Ownership and permissions for submitted material are not always certain| FR02 | UC02 | Contributor can see rights and permissions of their submitted material |View Rights and Permissions|
+|Staff are unsure what authority is required before information or decisions can be shared#| FR03 | UC03 | Staff can record authority before information about a request are disclosed with third parties  |Record Request Authority|
+|Requests arrive through several channels and may be incomplete | FR04 | UC04 | Requests arrives through a single channel |Submit Request|
+|Priorities and exceptions are not applied consistently | FR05 | UC05 |Allows staff to apply agreed priority and exceptions to requests |Apply Priorities and Exceptions| 
+|Provisional allocations remain in place while essential information is missing, long after the original request has stalled | FR06 | UC06 | Stalled Requests are released increasing capacity for allocations |Release Stalled Allocations |
+|Changes can affect several linked arrangements | FR07 | UC07 | Shows knock-on effect of linked arrangements before changes are made | Manage Linked Arrangements |
+|Connectivity may be unreliable during off-site work | FR08 | UC08 | Staff continue working on request-related tasks offline when connectivity is unreliable|Access Records Offline |
+|Staff may be unclear whether an item is preserved, approved for public access, or still awaiting approval |FR09 | UC09 |Item is safely retained if not approved public access |Preserve Archive Item |
+|Teams use status terms differently, and planned activities can be changed, partially completed, paused or withdrawn| FR10 |UC10 |Staff share a consistent understanding of a request's status |Set Activity Status|
+|Staff are unsure what authority is required before sharing information with external partners| FR11 | UC11 |Staff can authorise and send information required by the external partner's role| Review and Send Partner Information|
+|The coordinator needs information about unallocated requests, provisional arrangements, capacity conflicts, overdue actions and incomplete records | FR12 | UC12 |Coordinator can view issues affecting request capacity| View Coordination Overview|

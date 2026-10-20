@@ -39,6 +39,7 @@
 | PR7 | S3 L6 | Changes can affect several linked arrangements. | Links between arrangements are not visible, so their dependencies are not tracked | A change may leave conflicting records behind or affect arrangements nobody checked |
 | PR8 | S5 L4 | Connectivity may be unreliable during off-site work. | The process does not account for offline working | Staff may be unable to access or update records while off-site, which may cause delays or lost updates |
 | PR9 | S4 L2, S4 L3 | Teams use status terms differently, and planned activities can be changed, partially completed, paused or withdrawn | Activity status is not recorded in a shared, standard form | It is difficult to identify what is awaiting action and who is responsible, and the record may not show what happened |
+| PR 10 | S3 L2 | An item can be preserved without being approved for public access | Preservation and approval for public access are distinct decisions that need to be managed separately |Staff may be unclear whether an item is preserved, approved for public access, or still awaiting approval |
 
 
 
@@ -76,7 +77,7 @@ The proposed Digital Archive Contribution Service will support coordinators, ser
 
 | ID | Ref | In scope for initial release | ID | Ref | Out of scope for initial release |
 |---|---|---|---|---|---|
-| INS1 | PR1 | Contribution Record Management | OTS1 | S5 L6 | Specialist Professional Systems |
+| INS1 | PR1, PR10 | Contribution Record Management | OTS1 | S5 L6 | Specialist Professional Systems |
 | INS2 | PR2 | Rights and Permissions Confirmation | OTS2 | S5 L6 | Financial Accounting |
 | INS3 | PR3 | Authority Management | OTS3 | S5 L6 | Unrelated Public Website Functions |
 | INS4 | PR4 | Requests Management | | | |
