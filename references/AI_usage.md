@@ -134,3 +134,287 @@ User story:
 - Can staff continue working if connectivity repeatedly drops in and out?
 
 
+<br><br>
+# Find the Objects
+
+## Promt 1: 
+
+Finding_The_Objects.md
+can you make a table for Task 2 with headings "Candidate, Classification, Reason" For each Section in Task 1 and put the values from Candidate terms in Task 1 tables into Task 2 table column "Candidate". Also leave Classification and Reason columns blank
+
+Response:
+
+### Task 2: Classify the candidates
+
+
+
+#### Organisation and current service
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Kerry Community Digital Archive | | |
+| Receives | | |
+| Photographs | | |
+| Documents | | |
+| Audio | | |
+| Video | | |
+| Contributed | | |
+| Individuals | | |
+| Local Organisations | | |
+| Submission Files | | |
+| Descriptions | | |
+| Ownerships statements | | |
+| Permissions | | |
+| Review Notes | | |
+| Publication Decisions | | |
+| Stored | | |
+| Forms | | |
+| Folders | | |
+| Spreadsheets | | |
+
+#### Requests, eligibility and preparation
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Contribution | | |
+| Item | | |
+| Related Collection | | |
+| Contributor | | |
+| Material | | |
+| Rights Holder | | |
+| Ownership | | |
+| Permissions | | |
+| Requests | | |
+| Channels | | |
+| Incomplete | | |
+| Staff | | |
+| Expression | | |
+| Awaiting | | |
+| Evidence | | |
+| Decision | | |
+| Priorities | | |
+| Exceptions | | |
+| Applied | | |
+| Person or Organisation | | |
+| Assist | | |
+| Authority | | |
+| Required | | |
+| Detailed Information | | |
+| Sharded | | |
+
+#### Allocation and coordination
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Review | | |
+| Considers | | |
+| File Quality | | |
+| Description | | |
+| Sensitivity | | |
+| Ownership evidence | | |
+| Access Restrictions | | |
+| Relevance | | |
+| Item | | |
+| Preserved | | |
+| Approved | | |
+| Public Access | | |
+| Capacity | | |
+| Depends On | | |
+| People | | |
+| Places | | |
+| Resources | | |
+| Timing | | |
+| Visible Vacancy | | |
+| Requirement | | |
+| Satisfied | | |
+| Provisional Allocations | | |
+| Remain | | |
+| Essential information | | |
+| Missing | | |
+| Changes | | |
+| Affect | | |
+| Linked Arrangements | | |
+| Staff | | |
+| Preserve | | |
+| Confirmed Position | | |
+| Earlier Evidence | | |
+| Versions | | |
+
+#### Progress, review and exceptions
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Staff | | |
+| Progress | | |
+| Decisions | | |
+| Outstanding Actions | | |
+| Notes | | |
+| Messages | | |
+| Spreadsheets | | |
+| Teams | | |
+| Status Terms | | |
+| Awaiting Action | | |
+| Responsible | | |
+| Planned Activity | | |
+| Changed | | |
+| Partially Complete | | |
+| Paused | | |
+| Withdrawn | | |
+| Distinguish | | |
+| Operational Change | | |
+| Formal Decision | | |
+| Silence | | |
+| Approval | | |
+| Reviews | | |
+| Generate | | |
+| New Actions | | |
+| Revised Arrangements | | |
+| Escalation | | |
+| Earlier Evidence | | |
+| Overwritten | | |
+| Circumstances Change | | |
+
+#### Information, reporting and scope
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Coordinator | | |
+| Needs | | |
+| Information | | |
+| Unallocated Requests | | |
+| Provisional Arrangements | | |
+| Capacity Conflicts | | |
+| Overdue Actions | | |
+| Incomplete Records | | |
+| External Partners | | |
+| Receive | | |
+| Role | | |
+| Summary Reporting | | |
+| Needed | | |
+| Management | | |
+| Funders | | |
+| Exposing | | |
+| Unnecessary | | |
+| Personal or commercially sensitive information | | |
+| Connectivity | | |
+| Unreliable | | |
+| off-site Work | | |
+| Initial Scope | | |
+| Service Coordination | | |
+| Records | | |
+| Specialist Professional Systems | | |
+| Financial Accounting | | |
+| Unrelated Public Website Functions | | |
+| Outside Scope | | |
+
+#### Stakeholder evidence
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Coordinator | | |
+| Vacancy | | |
+| Match | | |
+| Important Requirements | | |
+| Satisfied | | |
+| Service User | | |
+| Need | | |
+| Waiting for information | | |
+| Decision | | |
+| Outside Organsation | | |
+| Administrator | | |
+| Provisional Arrangements | | |
+| Capacity | | |
+| Request | | |
+| Stalled | | |
+| Partner Representatives | | |
+| Role | | |
+| Case History | | |
+| Reviewer | | |
+| New Information | | |
+| Added | | |
+| Erasing | | |
+| Earlier Decisions | | |
+| Manager | | |
+| Reasons for delay | | |
+| Withdrawal | | |
+| Incomplete Outcomes | | |
+
+#### Unresolved matters
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Information is required | | |
+| Request | | |
+| Ready for decision | | |
+| Eligibility | | |
+| Priority | | |
+| Exceptions | | |
+| Applied | | |
+| Authority | | |
+| Acts for requester | | |
+| Provisional Allocations | | |
+| Expire | | |
+| Confirmed | | |
+| Approve Changes | | |
+| Substitutions | | |
+| Withdrawal | | |
+| Versions | | |
+| Reviews | | |
+| Outstanding Actions | | |
+| Staff | | |
+| Partners | | |
+| Funders | | |
+| Shared | | |
+
+## prompt 2
+
+"can you convert this classification guide from the lab into markdown "Classification guide
+Classification
+
+Question
+
+Examples
+
+Conceptual class
+
+Does the domain need to remember identity, facts, relationships or lifecycle?
+
+Student, Activity, Registration
+
+Attribute or value
+
+Is it a simple descriptive value of another concept?
+
+capacity, status, sessionDate
+
+Actor
+
+Does the external role interact with the system boundary?
+
+Student, Organiser, Manager
+
+Operation or event
+
+Is it an action that may reveal a transaction concept?
+
+register, cancel, attend
+
+Out of scope / implementation
+
+Is it a screen, database, framework, service layer or unsupported detail?
+
+form, table, controller"
+
+Answer:
+### Classification Guide
+
+| Classification | Question | Examples |
+|---|---|---|
+| Conceptual class | Does the domain need to remember identity, facts, relationships or lifecycle? | Student, Activity, Registration |
+| Attribute or value | Is it a simple descriptive value of another concept? | capacity, status, sessionDate |
+| Actor | Does the external role interact with the system boundary? | Student, Organiser, Manager |
+| Operation or event | Is it an action that may reveal a transaction concept? | register, cancel, attend |
+| Out of scope / implementation | Is it a screen, database, framework, service layer or unsupported detail? | form, table, controller |
+
+
+

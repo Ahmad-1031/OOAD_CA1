@@ -26,7 +26,7 @@ Submission files, descriptions, ownership statements, permissions, review notes 
 |Descriptions | Scenario(S1 L2) |Descriptions of the received items or request? |
 |Ownerships statements | Scenario(S1 L2) |Describing who owns the submitted items? |
 |Permissions | Scenario(S1 L2) |Permissions of who can see those items?  |
-|Review Notes | Scenario(S1 L2) |Short descriptions describing reviews of a submission? |
+|Review Notes | Scenario(S1 L2) |Short descriptions describing information about a review |
 |Publication Decisions | Scenario(S1 L2) |Describes state or level submission is at? |
 |Stored | Scenario(S1 L2) |Process of storing submission items? |
 |Forms | Scenario(S1 L2) |Current storage method for information related to received items |
@@ -191,7 +191,7 @@ The initial scope covers service coordination and records. Specialist profession
 
 | Candidate term | Evidence source | Initial question or observation |
 |---|---|---|
-|Coordinator |Scenario (S5 L1) |Entity concerned with handling allocations and reporting allocations issues |
+|Coordinator | Scenario (S5 L1) |Entity concerned with handling allocations and reporting allocations issues |
 |Needs | Scenario (S5 L1) |Stating needs of overview and reporting for coordination |
 |Information | Scenario (S5 L1) |Information available to other relevant roles? |
 |Unallocated Requests | Scenario (S5 L1) |Places / slots open for requests |
@@ -241,7 +241,34 @@ The initial scope covers service coordination and records. Specialist profession
 
 | Candidate term | Evidence source | Initial question or observation |
 |---|---|---|
-| | | |
+|Coordinator | Scenario (S6 L1) |Concerned with managing vacancies |
+|Vacancy | Scenario (S6 L1) |Provisional arrangement, provisional allocation |
+|Match | Scenario (S6 L1) |All requirements are met |
+|Important Requirements | Scenario (S6 L1) |Acceptance criteria for match |
+|Satisfied | Scenario (S6 L1) |State defining valid vacancy |
+|Service User | Scenario (S6 L2) |Contributor is service user |
+|Need | Scenario (S6 L2) |Needs of the contributor |
+|Waiting for information | Scenario (S6 L2) |State of request |
+|Decision | Scenario (S6 L2) |Describes progress of request |
+|Outside Organsation | Scenario (S6 L2) |Third parties are outside organsations |
+|Administrator | Scenario (S6 L3) |Management of provisional allocations | 
+|Provisional Arrangements | Scenario (S6 L3) |Also known as allocations |
+|Capacity | Scenario (S6 L3) |Dependency between Provisional allocations and capacity |
+|Request | Scenario (S6 L3) |Submitted material |
+|Stalled | Scenario (S6 L3) |State describing allocations |
+|Partner Representatives | Scenario (S6 L4) |Also known as third parties |
+|Role | Scenario (S6 L4) |Defines level access |
+|Case History | Scenario (S6 L4) |Also known as earlier evidence |
+|Reviewer | Scenario (S6 L5) |Can generate new actions based on circumstances changing |
+|New Information | Scenario (S6 L5) |New action |
+|Added | Scenario (S6 L5) |Creating new actions created new planned activity  |
+|Erasing | Scenario (S6 L5) |Existing records removed |
+|Earlier Decisions | Scenario (S6 L5) |Earlier versions |
+|Manager | Scenario (S6 L6) |Summery of requests progress |
+|Reasons for delay | Scenario (S6 L6) |Detailed information describing delay for request |
+|Withdrawal | Scenario (S6 L6) |Withdrawal or request or planned activity? |
+|Incomplete Outcomes | Scenario (S6 L6) |Outcomes of an entire request or specific activity? |
+
 
 <br><br><br>
 
@@ -266,12 +293,266 @@ The initial scope covers service coordination and records. Specialist profession
 
 | Candidate term | Evidence source | Initial question or observation |
 |---|---|---|
-| | | |
+|Information is required | | Scenario (S7 L1) |Criteria for a request |
+|Request | Scenario (S7 L1) | Submitted material / items |
+|Ready for decision | Scenario (S7 L1) | What makes request ready for decision and is ready a state? |
+|Eligibility | Scenario (S7 L2) |Same as satisfied requirements |
+|Priority | Scenario (S7 L2) |Which request get handled and what if two request have same priority? |
+|Exceptions | Scenario (S7 L2) |Who authorises exceptions? |
+|Applied | Scenario (S7 L2) |How and by whom are they applied? |
+|Authority | Scenario (S7 L3) |Required authority for when another entity acts on behalf of contributor |
+|Acts for requester | Scenario (S7 L3) |Third party managing / assisting on behalf of contributor |
+|Provisional Allocations | Scenario (S7 L3) |Provisional arrangements |
+|Expire | Scenario (S7 L3) |State change of an allocation? Time not agreed? |
+|Confirmed | Scenario (S7 L3) |State of allocation? What makes allocation confirmed |
+|Approve Changes | Scenario (S7 L4) |Who has authority to approve changes |
+|Substitutions | Scenario (S7 L4) |Substitution of a request to another allocation? Or substitution of allocation to a request |
+|Withdrawal | Scenario (S7 L4) |State of allocation or request? |
+|Versions |  Scenario (S7 L5) |Historical versions of request |
+|Reviews | Scenario (S7 L5) |How are review linked to specific versions, and outstanding actions |
+|Outstanding Actions | Scenario (S7 L5) |Task remaining to be done |
+|Staff | Scenario (S7 L6) |Can see requests, record decisions, makes changes |
+|Partners | Scenario (S7 L6) |Need summary reporting, role based information |
+|Funders | Scenario (S7 L6) |Need role based information |
+|Shared | Scenario (S7 L6) |Data visibility to different Roles |
+
 
 <br><br><br>
 
 
 ## Task 2: Classify the candidates
+
+
+### Classification guide
+| Classification | Question | Examples |
+|---|---|---|
+| Conceptual class | Does the domain need to remember identity, facts, relationships or lifecycle? | Student, Activity, Registration |
+| Attribute or value | Is it a simple descriptive value of another concept? | capacity, status, sessionDate |
+| Actor | Does the external role interact with the system boundary? | Student, Organiser, Manager |
+| Operation or event | Is it an action that may reveal a transaction concept? | register, cancel, attend |
+| Out of scope / implementation | Is it a screen, database, framework, service layer or unsupported detail? | form, table, controller |
+
+<br><br>
+
+### Organisation and current service
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Kerry Community Digital Archive |Out of scope / Implementation| Defines old system boundary and service |
+| Receives |Operation or event |Describes process receiving requests |
+| Photographs |Attribute |Possible Attribute of a request |
+| Documents |Conceptual Class |Could contain an item or items of a related to a request |
+| Audio |Attribute |Possible attribute contained within a request |
+| Video |Attribute |Possible attribute contained within a request |
+| Contributed |Operation or event |Represents action of submitting request |
+| Individuals | Actor / User Role | Represents people outside the system boundary who submit material within the archive  |
+| Local Organisations | Actor |Also Represent people outside the system boundary that submit material |
+| Submission Files |Conceptual Class |Need to hold information and history of a submission |
+| Descriptions | Attribute |Describes information related to a request item |
+| Ownerships statements | Attribute |Define an item's ownership |
+| Permissions | Conceptual Class | Holds access levels, rules and restrictions for different items |
+| Review Notes | Out of Scope / Implementation |Current way of storing short descriptions of review process |
+| Publication Decisions | Conceptual Class | Define decision states for request process |
+| Stored | Operation or event | Describes action of storing information into system |
+| Forms | Out of scope / Implementation | Current paper or legacy input method |
+| Folders | Out of scope / Implementation | Fragmented physical or legacy storage architecture |
+| Spreadsheets | Out of scope / Implementation | Inconsistent legacy file-based method|
+
+### Requests, eligibility and preparation
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Contribution | Conceptual Class | Contains a request's items and material |
+| Item | Conceptual Class | Part of a contribution containing material, information, ownership details |
+| Related Collection |Conceptual Class | Groups related archive items together based on shared context |
+| Contributor | Conceptual Class / Actor |Primary Actor submitting material to archive. Also acts as domain class inside the system boundary to track their profile identity and submission history|
+| Material | Conceptual Class  | Part of a request containing descriptive information, capture dates, and creation times|
+| Rights Holder | Conceptual Class / Actor |Primary actor holding the legal rights of material. Also acts as domain class inside the system boundary, as each rights holder contains distinct identification and verification attributes|
+| Ownership | Attribute  | Attribute defining the legal owner or copyright status of material or items |
+| Permissions | Conceptual Class  | Defines security access levels and visibility rules  |
+| Requests | Conceptual Class | Contains items related to request, and links to their historical versions |
+| Channels | Out of scope / Implementation | Old method of multiple entry points for requests|
+| Incomplete | Attribute or value |Status value indicating missing information from request |
+| Staff | Conceptual Class / Actor |Primary Actor handling requests. Also acts as domain class inside system to manage requests, assign work, and role-based access levels |
+| Expression | Operation or Event | Describes express of interest of a request |
+| Awaiting | Attribute Value |Status value describing state of request |
+| Evidence | Conceptual Class | Request awaiting evidence is awaiting necessary documentation which also required historical tracking |
+| Decision | Conceptual Class | Holds information about a choice made on a request, with recorded outcome, and kept overtime |
+| Priorities | Attribute or Value |Define priority rules or ranks to order requests consistently |
+| Exceptions | Conceptual Class  | Holds recorded reasons for creation and person who applies it, kept over time |
+| Applied | Operation or Event |Application of priorities and rules |
+| Person or Organisation | Out of scope |Describes Offstage stakeholders who do not interact with system boundary |
+| Assist | Operation or Event | Describes functional action of related to requests, with no transaction  |
+| Authority | Conceptual Class |  |
+| Required | Attribute  | |
+| Detailed Information | | |
+| Sharded | | |
+
+### Allocation and coordination
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Review | | |
+| Considers | | |
+| File Quality | | |
+| Description | | |
+| Sensitivity | | |
+| Ownership evidence | | |
+| Access Restrictions | | |
+| Relevance | | |
+| Item | | |
+| Preserved | | |
+| Approved | | |
+| Public Access | | |
+| Capacity | | |
+| Depends On | | |
+| People | | |
+| Places | | |
+| Resources | | |
+| Timing | | |
+| Visible Vacancy | | |
+| Requirement | | |
+| Satisfied | | |
+| Provisional Allocations | | |
+| Remain | | |
+| Essential information | | |
+| Missing | | |
+| Changes | | |
+| Affect | | |
+| Linked Arrangements | | |
+| Staff | | |
+| Preserve | | |
+| Confirmed Position | | |
+| Earlier Evidence | | |
+| Versions | | |
+
+### Progress, review and exceptions
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Staff | | |
+| Progress | | |
+| Decisions | | |
+| Outstanding Actions | | |
+| Notes | | |
+| Messages | | |
+| Spreadsheets | | |
+| Teams | | |
+| Status Terms | | |
+| Awaiting Action | | |
+| Responsible | | |
+| Planned Activity | | |
+| Changed | | |
+| Partially Complete | | |
+| Paused | | |
+| Withdrawn | | |
+| Distinguish | | |
+| Operational Change | | |
+| Formal Decision | | |
+| Silence | | |
+| Approval | | |
+| Reviews | | |
+| Generate | | |
+| New Actions | | |
+| Revised Arrangements | | |
+| Escalation | | |
+| Earlier Evidence | | |
+| Overwritten | | |
+| Circumstances Change | | |
+
+### Information, reporting and scope
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Coordinator | | |
+| Needs | | |
+| Information | | |
+| Unallocated Requests | | |
+| Provisional Arrangements | | |
+| Capacity Conflicts | | |
+| Overdue Actions | | |
+| Incomplete Records | | |
+| External Partners | | |
+| Receive | | |
+| Role | | |
+| Summary Reporting | | |
+| Needed | | |
+| Management | | |
+| Funders | | |
+| Exposing | | |
+| Unnecessary | | |
+| Personal or commercially sensitive information | | |
+| Connectivity | | |
+| Unreliable | | |
+| off-site Work | | |
+| Initial Scope | | |
+| Service Coordination | | |
+| Records | | |
+| Specialist Professional Systems | | |
+| Financial Accounting | | |
+| Unrelated Public Website Functions | | |
+| Outside Scope | | |
+
+### Stakeholder evidence
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Coordinator | | |
+| Vacancy | | |
+| Match | | |
+| Important Requirements | | |
+| Satisfied | | |
+| Service User | | |
+| Need | | |
+| Waiting for information | | |
+| Decision | | |
+| Outside Organsation | | |
+| Administrator | | |
+| Provisional Arrangements | | |
+| Capacity | | |
+| Request | | |
+| Stalled | | |
+| Partner Representatives | | |
+| Role | | |
+| Case History | | |
+| Reviewer | | |
+| New Information | | |
+| Added | | |
+| Erasing | | |
+| Earlier Decisions | | |
+| Manager | | |
+| Reasons for delay | | |
+| Withdrawal | | |
+| Incomplete Outcomes | | |
+
+### Unresolved matters
+
+| Candidate | Classification | Reason |
+|---|---|---|
+| Information is required | | |
+| Request | | |
+| Ready for decision | | |
+| Eligibility | | |
+| Priority | | |
+| Exceptions | | |
+| Applied | | |
+| Authority | | |
+| Acts for requester | | |
+| Provisional Allocations | | |
+| Expire | | |
+| Confirmed | | |
+| Approve Changes | | |
+| Substitutions | | |
+| Withdrawal | | |
+| Versions | | |
+| Reviews | | |
+| Outstanding Actions | | |
+| Staff | | |
+| Partners | | |
+| Funders | | |
+| Shared | | |
+
+
 
 ## Task 3: Refine the candidate list
 
