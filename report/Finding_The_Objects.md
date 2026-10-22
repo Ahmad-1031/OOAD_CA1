@@ -383,115 +383,115 @@ The initial scope covers service coordination and records. Specialist profession
 | Applied | Operation or Event |Application of priorities and rules |
 | Person or Organisation | Out of scope |Describes Offstage stakeholders who do not interact with system boundary |
 | Assist | Operation or Event | Describes functional action of related to requests, with no transaction  |
-| Authority | Conceptual Class |  |
-| Required | Attribute  | |
-| Detailed Information | | |
-| Sharded | | |
+| Authority | Conceptual Class |Defines roles given to each person who interacts with the system  |
+| Required | Attribute or Value |Status indicating authority for each request item |
+| Detailed Information |Attribute or Value | Holds information about item or request |
+| Sharded | Operation or Event | Describes process of sharing information |
 
 ### Allocation and coordination
 
 | Candidate | Classification | Reason |
 |---|---|---|
-| Review | | |
-| Considers | | |
-| File Quality | | |
-| Description | | |
-| Sensitivity | | |
-| Ownership evidence | | |
-| Access Restrictions | | |
-| Relevance | | |
-| Item | | |
-| Preserved | | |
-| Approved | | |
-| Public Access | | |
-| Capacity | | |
-| Depends On | | |
-| People | | |
-| Places | | |
-| Resources | | |
-| Timing | | |
-| Visible Vacancy | | |
-| Requirement | | |
-| Satisfied | | |
-| Provisional Allocations | | |
-| Remain | | |
-| Essential information | | |
-| Missing | | |
-| Changes | | |
-| Affect | | |
-| Linked Arrangements | | |
-| Staff | | |
-| Preserve | | |
-| Confirmed Position | | |
-| Earlier Evidence | | |
-| Versions | | |
+| Review | Conceptual Class | Contains information related with a review and holds historical tracking |
+| Considers | Operation or Event  | Describes process related to a review |
+| File Quality | Attribute or Value |Could be a score given to each item based on criteria met / satisfied |
+| Description | Attribute |Description of item submitted |
+| Sensitivity | Attribute or Value | Property of item indicating if item can be shared |
+| Ownership evidence |Attribute or Value | |
+| Access Restrictions | Conceptual Class |Defines Access levels to different roles |
+| Relevance | Attribute or Value | Property of item that review evaluates |
+| Item |Conceptual Class | Contains material, creation time, historical evidence of change |
+| Preserved | Operation or Event | Action of preserving item |
+| Approved | Attribute or Value | Status describing request progress |
+| Public Access | Attribute or Value |Status defining if item it visible to public |
+| Capacity | Attribute or Value |Value indicating allocations available |
+| Depends On | Operation or Event | Describes dependency of capacity |
+| People |Attribute or Value |Describes actors, staff, contributor etc |
+| Places |Conceptual Class |Same as Allocation |
+| Resources |Attribute or Value |Describes factors that impact capacity |
+| Timing | Attribute or Value | Times for allocation availability |
+| Visible Vacancy | Conceptual Class | Same as Allocation |
+| Requirement | Attribute or Value |Status describing if criteria is met for visible vacancy |
+| Satisfied | Attribute or Value | Status indicating requirements are met for visible vacancy |
+| Provisional Allocations | Conceptual Class | Same as visible vacancy |
+| Remain | Attribute or Value | Same status as stalled request |
+| Essential information | Attribute or Value | Status; same as satisfied |
+| Missing | Attribute or Value |Status indicating missing information; same as essential information |
+| Changes | Operation or Event |Describes editing of current items |
+| Affect | Operation or Event |Describes knock-on effect process between related items |
+| Linked Arrangements | Conceptual Class | Domain class representing related items and dependency between them |
+| Staff | Actor / Conceptual Class | Duplicate |
+| Preserve |Operation or Event | Operational action describing item preservation |
+| Confirmed Position | Attribute or Value | Status value for confirmed allocation |
+| Earlier Evidence | Conceptual Class | Historical information related to items or request |
+| Versions | Conceptual Class | Same as earlier evidence |
 
 ### Progress, review and exceptions
 
 | Candidate | Classification | Reason |
 |---|---|---|
-| Staff | | |
-| Progress | | |
-| Decisions | | |
-| Outstanding Actions | | |
-| Notes | | |
-| Messages | | |
-| Spreadsheets | | |
-| Teams | | |
-| Status Terms | | |
-| Awaiting Action | | |
-| Responsible | | |
-| Planned Activity | | |
-| Changed | | |
-| Partially Complete | | |
-| Paused | | |
-| Withdrawn | | |
-| Distinguish | | |
-| Operational Change | | |
-| Formal Decision | | |
-| Silence | | |
-| Approval | | |
-| Reviews | | |
-| Generate | | |
-| New Actions | | |
-| Revised Arrangements | | |
-| Escalation | | |
-| Earlier Evidence | | |
-| Overwritten | | |
-| Circumstances Change | | |
+| Staff | Actor / Conceptual Class |Duplicate |
+| Progress | Attribute or Value |Status terms indicating progression of request |
+| Decisions |Conceptual Class | Duplicate |
+| Outstanding Actions | Conceptual Class |Describes tasks; same as planned activity |
+| Notes | Out of Scope / Implementation |Duplicate |
+| Messages | Out of Scope / Implementation |Duplicate |
+| Spreadsheets | Out of Scope / Implementation |Duplicate |
+| Teams | Attribute or Value | Defines what team each staff members belongs to |
+| Status Terms | Attribute or Value |Status values indicating request progression  |
+| Awaiting Action | Attribute or Value | Status related to request process |
+| Responsible | Attribute or Value |Same as task ownership |
+| Planned Activity | Conceptual Class |Domain class that represents tasks, outstanding actions, new actions |
+| Changed |Operation or Event |Operation describing changing states of an activity |
+| Partially Complete |Attribute or Value |Status describing activity progression |
+| Paused |Attribute or Value | Status describing paused activity |
+| Withdrawn |Attribute or Value |Status describing withdrawal / discarded activity |
+| Distinguish | Operation or Event | Process of describing action taken by staff; no class or transaction revealed |
+| Operational Change | Conceptual Class | Recordings of changes made to activity |
+| Formal Decision | Conceptual Class | Decision outcome; held in an item's history |
+| Silence | Out of Scope / Implementation |Describes business rule |
+| Approval | Conceptual Class  |Indicates outcome of review; same as decisions |
+| Reviews | Conceptual class |Duplicate |
+| Generate | Operation or Event |Operation event describing creation of tasks |
+| New Actions |Conceptual Class |New activities made from reviews |
+| Revised Arrangements | Conceptual Class |Updated allocation conditions; related to reviews outcome |
+| Escalation | Operation Or Event | Event triggered through review outcome  |
+| Earlier Evidence |Conceptual Class |Record of historical changes |
+| Overwritten | Operation or Event | Operation describing updating or deletion of records |
+| Circumstances Change |Operation or Event | Operational event describing updating of information without deleting evidence |
 
 ### Information, reporting and scope
 
 | Candidate | Classification | Reason |
 |---|---|---|
-| Coordinator | | |
-| Needs | | |
-| Information | | |
-| Unallocated Requests | | |
-| Provisional Arrangements | | |
-| Capacity Conflicts | | |
-| Overdue Actions | | |
-| Incomplete Records | | |
-| External Partners | | |
-| Receive | | |
-| Role | | |
-| Summary Reporting | | |
-| Needed | | |
-| Management | | |
-| Funders | | |
-| Exposing | | |
-| Unnecessary | | |
-| Personal or commercially sensitive information | | |
-| Connectivity | | |
-| Unreliable | | |
-| off-site Work | | |
-| Initial Scope | | |
-| Service Coordination | | |
-| Records | | |
-| Specialist Professional Systems | | |
-| Financial Accounting | | |
-| Unrelated Public Website Functions | | |
-| Outside Scope | | |
+| Coordinator | Actor / Conceptual class |Primary Actor who handles, unallocated requests, capacity and views operational changes |
+| Needs | Operation or Event |Verb describing coordinator requirements; no class or transaction revealed |
+| Information | Attribute or Value |Information related to allocation and request management; too vague to be standalone class |
+| Unallocated Requests |Attribute or Value |Status describing an unassigned request |
+| Provisional Arrangements | Conceptual Class |Duplicate; visible vacancy, allocation synonym |
+| Capacity Conflicts | Conceptual Class |Class that tracks and shows capacity conflicts |
+| Overdue Actions | Conceptual Class |Synonym for outstanding actions |
+| Incomplete Records | Attribute or Value |Status describing incomplete record |
+| External Partners | Out of Scope |Offstage stakeholder; system being designed for primary actors |
+| Receive | Operation or Event |Operation describing sending of information |
+| Role | Attribute or Value |Defines access to information based on role |
+| Summary Reporting | Out of Scope / Implementation |Not included in FRs|
+| Needed | Operation or Event | Duplicate |
+| Management | Out of Scope / Implementation |Offstage stakeholder, not included in FRS |
+| Funders |Out of Scope / Implementation | Offstage Stakeholder |
+| Exposing | Operation or Event |Same as visibility |
+| Unnecessary | Attribute or Value |Value describing unimportant information |
+| Personal or commercially sensitive information | Attribute or Value |Value describing sensitivity of item |
+| Connectivity | Out of Scope / Implementation |Describes a quality requirement for system rather than domain concept |
+| Unreliable | Attribute |Status value associated with connection |
+| off-site Work |Out of Scope / Implementation | Describes off-site operations for managing records|
+| Initial Scope | Out of Scope / Implementation |Defines functional boundaries for initial release of system |
+| Service Coordination | Out of Scope / Implementation |Not a domain concept, but rather a scope boundary |
+| Records | Conceptual Class |Main class containing information related to record |
+| Specialist Professional Systems |Out of Scope / Implementation |Defined out of scope |
+| Financial Accounting |Out of Scope / Implementation |Defined out of scope |
+| Unrelated Public Website Functions |Out of Scope / Implementation |Defined out of scope  |
+| Outside Scope |Out of Scope / Implementation |Defines boundaries out of scope for initial release|
 
 ### Stakeholder evidence
 
