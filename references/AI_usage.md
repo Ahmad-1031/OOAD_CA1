@@ -416,5 +416,267 @@ Answer:
 | Operation or event | Is it an action that may reveal a transaction concept? | register, cancel, attend |
 | Out of scope / implementation | Is it a screen, database, framework, service layer or unsupported detail? | form, table, controller |
 
+## Promt 2 : 
+"How could I color the actions column for in the refined list section in markdown?"
+
+Response: 
+## Colouring the Action column
+
+Standard markdown has no colour. Text colour needs HTML, and many viewers ignore it. Here are the options from most to least reliable.
+
+### 1. Coloured emoji (works almost everywhere)
+
+Use a symbol in the Action column:
+
+- 🟢 Keep
+- 🟡 Merge
+- 🔵 Convert
+- 🔴 Remove
+
+For example: `🟢 Keep`, `🔴 Remove`.
+
+This is the safest option, because the colour is visible and the word is still there for screen readers and for copying into Word.
+
+### 2. HTML colour span (works in some viewers, not GitHub or most chat apps)
+
+```html
+<span style="color:green">Keep</span>
+<span style="color:orange">Merge</span>
+<span style="color:blue">Convert</span>
+<span style="color:red">Remove</span>
+```
+
+Inside a table, this only works if the viewer allows inline HTML. Many don't, so the text may show literally as tags.
+
+### 3. Use colour in Word or Excel instead
+
+If the final submission is a Word document or spreadsheet, colour the cells there. Word can shade table cells, and Excel supports conditional formatting. Keep the markdown for drafting and apply colour when you format the final file.
+
+I'd use option 1 for your working file, and option 3 for the submitted version, since your assessor will almost certainly open a Word or PDF document, not a markdown file.
+
+## prompt 3 : 
+"Could you give me a table for  each section for task 3. Insert values for candidate from task 2 section tables. Leave action, Final term, and reason blank"
+
+Response: 
+
+## Task 3: Refine the candidate list
+
+### Organisation and current service
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Kerry Community Digital Archive | | | |
+| Receives | | | |
+| Photographs | | | |
+| Documents | | | |
+| Audio | | | |
+| Video | | | |
+| Contributed | | | |
+| Individuals | | | |
+| Local Organisations | | | |
+| Submission Files | | | |
+| Descriptions | | | |
+| Ownerships statements | | | |
+| Permissions | | | |
+| Review Notes | | | |
+| Publication Decisions | | | |
+| Stored | | | |
+| Forms | | | |
+| Folders | | | |
+| Spreadsheets | | | |
+
+### Requests, eligibility and preparation
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Contribution | | | |
+| Item | | | |
+| Related Collection | | | |
+| Contributor | | | |
+| Material | | | |
+| Rights Holder | | | |
+| Ownership | | | |
+| Permissions | | | |
+| Requests | | | |
+| Channels | | | |
+| Incomplete | | | |
+| Staff | | | |
+| Expression | | | |
+| Awaiting | | | |
+| Evidence | | | |
+| Decision | | | |
+| Priorities | | | |
+| Exceptions | | | |
+| Applied | | | |
+| Person or Organisation | | | |
+| Assist | | | |
+| Authority | | | |
+| Required | | | |
+| Detailed Information | | | |
+| Sharded | | | |
+
+### Allocation and coordination
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Review | | | |
+| Considers | | | |
+| File Quality | | | |
+| Description | | | |
+| Sensitivity | | | |
+| Ownership evidence | | | |
+| Access Restrictions | | | |
+| Relevance | | | |
+| Item | | | |
+| Preserved | | | |
+| Approved | | | |
+| Public Access | | | |
+| Capacity | | | |
+| Depends On | | | |
+| People | | | |
+| Places | | | |
+| Resources | | | |
+| Timing | | | |
+| Visible Vacancy | | | |
+| Requirement | | | |
+| Satisfied | | | |
+| Provisional Allocations | | | |
+| Remain | | | |
+| Essential information | | | |
+| Missing | | | |
+| Changes | | | |
+| Affect | | | |
+| Linked Arrangements | | | |
+| Staff | | | |
+| Preserve | | | |
+| Confirmed Position | | | |
+| Earlier Evidence | | | |
+| Versions | | | |
+
+### Progress, review and exceptions
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Staff | | | |
+| Progress | | | |
+| Decisions | | | |
+| Outstanding Actions | | | |
+| Notes | | | |
+| Messages | | | |
+| Spreadsheets | | | |
+| Teams | | | |
+| Status Terms | | | |
+| Awaiting Action | | | |
+| Responsible | | | |
+| Planned Activity | | | |
+| Changed | | | |
+| Partially Complete | | | |
+| Paused | | | |
+| Withdrawn | | | |
+| Distinguish | | | |
+| Operational Change | | | |
+| Formal Decision | | | |
+| Silence | | | |
+| Approval | | | |
+| Reviews | | | |
+| Generate | | | |
+| New Actions | | | |
+| Revised Arrangements | | | |
+| Escalation | | | |
+| Earlier Evidence | | | |
+| Overwritten | | | |
+| Circumstances Change | | | |
+
+### Information, reporting and scope
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Coordinator | | | |
+| Needs | | | |
+| Information | | | |
+| Unallocated Requests | | | |
+| Provisional Arrangements | | | |
+| Capacity Conflicts | | | |
+| Overdue Actions | | | |
+| Incomplete Records | | | |
+| External Partners | | | |
+| Receive | | | |
+| Role | | | |
+| Summary Reporting | | | |
+| Needed | | | |
+| Management | | | |
+| Funders | | | |
+| Exposing | | | |
+| Unnecessary | | | |
+| Personal or commercially sensitive information | | | |
+| Connectivity | | | |
+| Unreliable | | | |
+| off-site Work | | | |
+| Initial Scope | | | |
+| Service Coordination | | | |
+| Records | | | |
+| Specialist Professional Systems | | | |
+| Financial Accounting | | | |
+| Unrelated Public Website Functions | | | |
+| Outside Scope | | | |
+
+### Stakeholder evidence
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Coordinator | | | |
+| Vacancy | | | |
+| Match | | | |
+| Important Requirements | | | |
+| Satisfied | | | |
+| Service User | | | |
+| Need | | | |
+| Waiting for information | | | |
+| Decision | | | |
+| Outside Organsation | | | |
+| Administrator | | | |
+| Provisional Arrangements | | | |
+| Capacity | | | |
+| Request | | | |
+| Stalled | | | |
+| Partner Representatives | | | |
+| Role | | | |
+| Case History | | | |
+| Reviewer | | | |
+| New Information | | | |
+| Added | | | |
+| Erasing | | | |
+| Earlier Decisions | | | |
+| Manager | | | |
+| Reasons for delay | | | |
+| Withdrawal | | | |
+| Incomplete Outcomes | | | |
+
+### Unresolved matters
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Information is required | | | |
+| Request | | | |
+| Ready for decision | | | |
+| Eligibility | | | |
+| Priority | | | |
+| Exceptions | | | |
+| Applied | | | |
+| Authority | | | |
+| Acts for requester | | | |
+| Provisional Allocations | | | |
+| Expire | | | |
+| Confirmed | | | |
+| Approve Changes | | | |
+| Substitutions | | | |
+| Withdrawal | | | |
+| Versions | | | |
+| Reviews | | | |
+| Outstanding Actions | | | |
+| Staff | | | |
+| Partners | | | |
+| Funders | | | |
+| Shared | | | |
 
 

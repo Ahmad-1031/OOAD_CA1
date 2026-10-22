@@ -497,63 +497,298 @@ The initial scope covers service coordination and records. Specialist profession
 
 | Candidate | Classification | Reason |
 |---|---|---|
-| Coordinator | | |
-| Vacancy | | |
-| Match | | |
-| Important Requirements | | |
-| Satisfied | | |
-| Service User | | |
-| Need | | |
-| Waiting for information | | |
-| Decision | | |
-| Outside Organsation | | |
-| Administrator | | |
-| Provisional Arrangements | | |
-| Capacity | | |
-| Request | | |
-| Stalled | | |
-| Partner Representatives | | |
-| Role | | |
-| Case History | | |
-| Reviewer | | |
-| New Information | | |
-| Added | | |
-| Erasing | | |
-| Earlier Decisions | | |
-| Manager | | |
-| Reasons for delay | | |
-| Withdrawal | | |
-| Incomplete Outcomes | | |
+| Coordinator |Actor / Conceptual Class  | Duplicate |
+| Vacancy |Conceptual Class |Duplicate; synonym for allocation, arrangement |
+| Match |Attribute or Value |Status indicating allocation match with request|
+| Important Requirements | Attribute or Value | Requirements needed for a match |
+| Satisfied |Attribute or Value | Status related to valid match of vacancy |
+| Service User | Actor / Conceptual Class |Synonym for Contributor |
+| Need |Operation or Event |Describes a user need of request information  |
+| Waiting for information | Attribute or Value |Status of a request |
+| Decision |Conceptual Class |Duplicate |
+| Outside Organsation |Out of Scope / Implementation |Duplicate |
+| Administrator | Actor / Conceptual Class |Primary actor tht monitors provisional allocations, release stalled requests and increase capacity for new requests |
+| Provisional Arrangements | Conceptual Class |Duplicate |
+| Capacity |Attribute or Value |Duplicate |
+| Request |Conceptual Class |Duplicate |
+| Stalled |Attribute or Value |Duplicate |
+| Partner Representatives | Out of Scope / Implementation |Duplicate |
+| Role |Attribute or Value |Duplicate |
+| Case History |Out of Scope / Implementation |Concerned with history reporting |
+| Reviewer |Attribute or Value |Staff role type |
+| New Information |Attribute or Value |Same as overwritten  |
+| Added |Operation or Event |Duplicate |
+| Erasing |Operation or Event |Duplicate |
+| Earlier Decisions |Conceptual Class |Synonym for earlier evidence |
+| Manager | Out of Scope / Implementation |Offstage stakeholder; management |
+| Reasons for delay | Attribute or Value |Description describing activity changes |
+| Withdrawal |Attribute or Value |Duplicate |
+| Incomplete Outcomes |Attribute or Value |Duplicate |
 
 ### Unresolved matters
 
 | Candidate | Classification | Reason |
 |---|---|---|
-| Information is required | | |
-| Request | | |
-| Ready for decision | | |
-| Eligibility | | |
-| Priority | | |
-| Exceptions | | |
-| Applied | | |
-| Authority | | |
-| Acts for requester | | |
-| Provisional Allocations | | |
-| Expire | | |
-| Confirmed | | |
-| Approve Changes | | |
-| Substitutions | | |
-| Withdrawal | | |
-| Versions | | |
-| Reviews | | |
-| Outstanding Actions | | |
-| Staff | | |
-| Partners | | |
-| Funders | | |
-| Shared | | |
+| Information is required |Attribute or Value |Status describing incomplete criteria for request |
+| Request | Conceptual Class  |Duplicate |
+| Ready for decision |Attribute |Duplicate |
+| Eligibility |Attribute or Value |Duplicate |
+| Priority |Attribute or Value |Duplicate |
+| Exceptions |Conceptual Class |Duplicate|
+| Applied |Operation or Event |Duplicate |
+| Authority |Conceptual Class |Roles defines for staff |
+| Acts for requester |Out of Scope / Implementation |Synonym for third parties |
+| Provisional Allocations |Conceptual Class |Duplicate |
+| Expire |Attribute or Value |Duplicate |
+| Confirmed |Attribute or Value |Duplicate |
+| Approve Changes |Operation or Event |Event describing authorisation |
+| Substitutions | Conceptual Class |Synonym for revised arrangements |
+| Withdrawal |Attribute or Value |Duplicate |
+| Versions |Conceptual Class |Synonym for earlier evidence |
+| Reviews |Conceptual Class |Duplicate |
+| Outstanding Actions |Conceptual Class |Duplicate |
+| Staff |Actor / Conceptual Class |Duplicate |
+| Partners |Out of Scope / Implementation |Duplicate |
+| Funders |Out of Scope / Implementation |Duplicate |
+| Shared | Operation or Event | Duplicate |
 
 
 
 ## Task 3: Refine the candidate list
+
+- 🟢 Keep
+- 🟡 Merge
+- 🔵 Convert
+- 🔴 Remove
+
+```
+<span style="color:green">Keep</span>
+<span style="color:orange">Merge</span>
+<span style="color:blue">Convert</span>
+<span style="color:red">Remove</span>
+```
+
+<br>
+
+### Organisation and current service
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Kerry Community Digital Archive | 🔴Remove|Context for the system; not class |
+| Receives | 🔵Convert |Contribution |An action the archive performs|
+| Photographs |🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
+| Documents |🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
+| Audio | 🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
+| Video | 🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
+| Contributed | 🔵Convert | Contribution | An action by a contributor that brings material in |
+| Individuals | 🟡Merge | Contributor | Same as actor contributor |
+| Local Organisations |🟡Merge | Contributor | Same as actor contributor |
+| Submission Files |🟡Merge |Item | The files that make up an item |
+| Descriptions | 🔵Convert | Item (Type Attribute) |A property of an item |
+| Ownerships statements |🔵Convert |Item (Type Attribute) | |
+| Permissions |🔵Convert |Item (Type Attribute) | |
+| Review Notes |🟡Merge | Review |Recorded during a review |
+| Publication Decisions |🟡Merge |Decision |A decision made at a point in the process |
+| Stored | 🔴Remove | - | Describes how information is kept today, not a domain term |
+| Forms |🔴Remove | - | A current storage method the new system replaces |
+| Folders | 🔴Remove | - | A current storage method the new system replaces |
+| Spreadsheets | 🔴Remove | - | A current storage method the new system replaces |
+
+### Requests, eligibility and preparation
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Contribution | 🟢Keep |Contribution | Received, tracked and kept over time |
+| Item | 🟢Keep | Item | A piece of material within a contribution, with its own media type, description and sensitivity |
+| Related Collection | 🟡Merge | Contribution |A group of related items within one contribution |
+| Contributor | 🟢Keep | Contributor | Submits material and is affected by the outcome |
+| Material | 🟡Merge | Item | The content of an item, so it’s part of the item |
+| Rights Holder | 🟡Merge | Contributor | Merge unless a rights holder can differ from the contributor. This is a decision to confirm |
+| Ownership | 🔵Convert | Item(Attribute) | A property of an item recording its owner |
+| Permissions | 🔵Convert | Item(Attribute) | A property of an item recording who may see or change it |
+| Requests | 🟢Keep | Request | Moves through stages before it is ready for decision |
+| Channels | 🔴Remove | - | Replaced by the single point of entry (FR04) |
+| Incomplete | 🔵Convert | Request (state) | A state a request can be in when information is missing |
+| Staff | 🟢Keep | Staff | Handles requests and records decisions |
+| Expression | 🔵Convert | Request (stage) |A stage a request can be at |
+| Awaiting | 🔵Convert | Request (state) | The state of a request awaiting evidence |
+| Evidence | 🟢Keep | Evidence | Awaited, provided and kept over time |
+| Decision | 🟢Keep | Decision | A recorded outcome with a person and a date  |
+| Priorities | 🔵Convert |Request (Attribute)  | A property of a request that sets its order |
+| Exceptions | 🟢Keep  | Exception | A recorded departure from the priority rules  |
+| Applied | 🔵Convert | Operation: apply priority or exception  | An action staff perform on a request |
+| Person or Organisation | 🟡Merge | Third Party | The same role as a third party who assists with a request |
+| Assist | 🔵Convert | Operation: assist request (on Third Party) | An action a third party performs on a request |
+| Authority | 🟢Keep | Authority | Records who may act for a request, with its history |
+| Required | 🔵Convert  | Authority (Attribute) |The condition that must be met before information is shared |
+| Detailed Information | 🔴Remove | -  | Too generic to be a domain term |
+| Sharded | 🔵Convert | Operation: share information | The action of sharing information with a partner or third party|
+
+### Allocation and coordination
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Review | | | |
+| Considers | | | |
+| File Quality | | | |
+| Description | | | |
+| Sensitivity | | | |
+| Ownership evidence | | | |
+| Access Restrictions | | | |
+| Relevance | | | |
+| Item | | | |
+| Preserved | | | |
+| Approved | | | |
+| Public Access | | | |
+| Capacity | | | |
+| Depends On | | | |
+| People | | | |
+| Places | | | |
+| Resources | | | |
+| Timing | | | |
+| Visible Vacancy | | | |
+| Requirement | | | |
+| Satisfied | | | |
+| Provisional Allocations | | | |
+| Remain | | | |
+| Essential information | | | |
+| Missing | | | |
+| Changes | | | |
+| Affect | | | |
+| Linked Arrangements | | | |
+| Staff | | | |
+| Preserve | | | |
+| Confirmed Position | | | |
+| Earlier Evidence | | | |
+| Versions | | | |
+
+### Progress, review and exceptions
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Staff | | | |
+| Progress | | | |
+| Decisions | | | |
+| Outstanding Actions | | | |
+| Notes | | | |
+| Messages | | | |
+| Spreadsheets | | | |
+| Teams | | | |
+| Status Terms | | | |
+| Awaiting Action | | | |
+| Responsible | | | |
+| Planned Activity | | | |
+| Changed | | | |
+| Partially Complete | | | |
+| Paused | | | |
+| Withdrawn | | | |
+| Distinguish | | | |
+| Operational Change | | | |
+| Formal Decision | | | |
+| Silence | | | |
+| Approval | | | |
+| Reviews | | | |
+| Generate | | | |
+| New Actions | | | |
+| Revised Arrangements | | | |
+| Escalation | | | |
+| Earlier Evidence | | | |
+| Overwritten | | | |
+| Circumstances Change | | | |
+
+### Information, reporting and scope
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Coordinator | | | |
+| Needs | | | |
+| Information | | | |
+| Unallocated Requests | | | |
+| Provisional Arrangements | | | |
+| Capacity Conflicts | | | |
+| Overdue Actions | | | |
+| Incomplete Records | | | |
+| External Partners | | | |
+| Receive | | | |
+| Role | | | |
+| Summary Reporting | | | |
+| Needed | | | |
+| Management | | | |
+| Funders | | | |
+| Exposing | | | |
+| Unnecessary | | | |
+| Personal or commercially sensitive information | | | |
+| Connectivity | | | |
+| Unreliable | | | |
+| off-site Work | | | |
+| Initial Scope | | | |
+| Service Coordination | | | |
+| Records | | | |
+| Specialist Professional Systems | | | |
+| Financial Accounting | | | |
+| Unrelated Public Website Functions | | | |
+| Outside Scope | | | |
+
+### Stakeholder evidence
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Coordinator | | | |
+| Vacancy | | | |
+| Match | | | |
+| Important Requirements | | | |
+| Satisfied | | | |
+| Service User | | | |
+| Need | | | |
+| Waiting for information | | | |
+| Decision | | | |
+| Outside Organsation | | | |
+| Administrator | | | |
+| Provisional Arrangements | | | |
+| Capacity | | | |
+| Request | | | |
+| Stalled | | | |
+| Partner Representatives | | | |
+| Role | | | |
+| Case History | | | |
+| Reviewer | | | |
+| New Information | | | |
+| Added | | | |
+| Erasing | | | |
+| Earlier Decisions | | | |
+| Manager | | | |
+| Reasons for delay | | | |
+| Withdrawal | | | |
+| Incomplete Outcomes | | | |
+
+### Unresolved matters
+
+| Candidate | Action | Final term | Reason |
+|---|---|---|---|
+| Information is required | | | |
+| Request | | | |
+| Ready for decision | | | |
+| Eligibility | | | |
+| Priority | | | |
+| Exceptions | | | |
+| Applied | | | |
+| Authority | | | |
+| Acts for requester | | | |
+| Provisional Allocations | | | |
+| Expire | | | |
+| Confirmed | | | |
+| Approve Changes | | | |
+| Substitutions | | | |
+| Withdrawal | | | |
+| Versions | | | |
+| Reviews | | | |
+| Outstanding Actions | | | |
+| Staff | | | |
+| Partners | | | |
+| Funders | | | |
+| Shared | | | |
+
+
+
 
 ## Task 4: Create the domain glossary
