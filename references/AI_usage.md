@@ -680,3 +680,17 @@ Response:
 | Shared | | | |
 
 
+# Summary
+
+In summary I used claude for generating most of my tables for the CA which saved lots of time. I also want to be transparent about the fact that for each step of the project, I came up with the ideas / interpretation myself and then pasted my entire sections into claude. By doing so Claude helped to keep traceability of facts between sections which I used as a guide to help write sections.
+
+For example in "Stakeholders and Requirements Analysis" for my "Separate Symptoms, Problems, and Consequences" section, I created the full table myself and added references to the problems from the scenario. I then pasted my finished table into Claude, which helped highlight other lines in the scenario that could be referenced for each problem.
+
+ However it was still my decision to accept or reject the suggestions based on if I felt they were relevant or not. This was necessary as sometimes claude would suggest a reference to include, and I would create an argument for whether it was or was not needed, and Claude would change its answer.
+
+For example it suggested a reference to include, I argued it wasn't relevant because of such a reason and it would change it answer from: Yes it needed to Yes your correct that it isn't needed
+
+Claude also helped clean up language, which can be seen throughout the project. I would finish my tables, past them into claude and it would reword my sentences without adding to them, helping me communicate my ideas more clearly. This improved my workflow as sometimes I would jot down ideas for a sentence and it would generate a correct structured sentence based from the ideas I noted down.
+
+
+
