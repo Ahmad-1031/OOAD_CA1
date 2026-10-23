@@ -1,0 +1,43 @@
+@startuml
+
+    left to right direction
+    actor Contributor
+    actor Staff
+    actor Coordinator
+    actor Administrator
+    actor Reviewer
+
+    Rectangle "Archive Publication Service" {
+
+        usecase "View Rights and Permissions" as UC02
+        usecase "Submit Request" as UC04
+        usecase "View Contribution Record" as UC01
+        usecase "Record Request Authority" as UC03
+        usecase "Apply Priorities and Exceptions" as UC05
+        usecase "Record Records Offline" as UC08
+        usecase "Preserve Archive Item" as UC09
+        usecase "Set Activity Status" as UC10
+        usecase "Review and Send Partner Information" as UC11
+        usecase "Release Stalled Allocations" as UC06
+        usecase "Manage Linked Arrangements" as UC07
+        usecase "View Coordination Overview" as UC12
+    }
+
+    Contributor --> UC02
+    Contributor --> UC04
+
+    Staff --> UC01
+    Staff --> UC03
+    Staff --> UC05
+    Staff --> UC08
+    Staff --> UC09
+    Staff --> UC10
+    Staff --> UC11
+
+    Administrator --> UC06
+
+    Reviewer --> UC07
+
+    Coordinator --> UC12
+
+@enduml
