@@ -575,20 +575,20 @@ The initial scope covers service coordination and records. Specialist profession
 | Candidate | Action | Final term | Reason |
 |---|---|---|---|
 | Kerry Community Digital Archive | 🔴Remove|Context for the system; not class |
-| Receives | 🔵Convert |Contribution |An action the archive performs|
+| Receives | 🔴Remove |- |An Operation not class|
 | Photographs |🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
-| Documents |🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
-| Audio | 🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
-| Video | 🔵Convert | Item (Type Attribute) | A media type of an item; not separate class |
-| Contributed | 🔵Convert | Contribution | An action by a contributor that brings material in |
-| Individuals | 🟡Merge | Contributor | Same as actor contributor |
+| Documents |🔵Convert | Item (type of item) | A media type of an item; not separate class |
+| Audio | 🔵Convert | Item (type of item) | A media type of an item; not separate class |
+| Video | 🔵Convert | Item (type of item) | A media type of an item; not separate class |
+| Contributed | 🔴Remove | - | An Operation, not class or attribute |
+| Individuals | 🟡Merge | - Contributor | Same as Contributor |
 | Local Organisations |🟡Merge | Contributor | Same as actor contributor |
-| Submission Files |🟡Merge |Item | The files that make up an item |
-| Descriptions | 🔵Convert | Item (Type Attribute) |A property of an item |
-| Ownerships statements |🔵Convert |Item (Type Attribute) | |
-| Permissions |🔵Convert |Item (Type Attribute) | |
-| Review Notes |🟡Merge | Review |Recorded during a review |
-| Publication Decisions |🟡Merge |Decision |A decision made at a point in the process |
+| Submission Files | 🔵Convert |Request | Request Class |
+| Descriptions | 🔵Convert | Item (Type Attribute) | Attribute of an item |
+| Ownerships statements |🔵Convert |Item (Type Attribute) | Attribute of an item |
+| Permissions |🔵Convert |Item (Type Attribute) | Attribute of an item |
+| Review Notes |🔵Convert| Review(notes) | Attribute of a Review|
+| Publication Decisions| 🟡Merge  |Decision | Class |
 | Stored | 🔴Remove | - | Describes how information is kept today, not a domain term |
 | Forms |🔴Remove | - | A current storage method the new system replaces |
 | Folders | 🔴Remove | - | A current storage method the new system replaces |
@@ -600,195 +600,260 @@ The initial scope covers service coordination and records. Specialist profession
 |---|---|---|---|
 | Contribution | 🟢Keep |Contribution | Received, tracked and kept over time |
 | Item | 🟢Keep | Item | A piece of material within a contribution, with its own media type, description and sensitivity |
-| Related Collection | 🟡Merge | Contribution |A group of related items within one contribution |
+| Related Collection | 🔴Remove | - |Related items not class |
 | Contributor | 🟢Keep | Contributor | Submits material and is affected by the outcome |
-| Material | 🟡Merge | Item | The content of an item, so it’s part of the item |
-| Rights Holder | 🟡Merge | Contributor | Merge unless a rights holder can differ from the contributor. This is a decision to confirm |
-| Ownership | 🔵Convert | Item(Attribute) | A property of an item recording its owner |
-| Permissions | 🔵Convert | Item(Attribute) | A property of an item recording who may see or change it |
+| Material | 🔴Remove | - | too vague |
+| Rights Holder | 🟡Merge| Contributor | Synonym for contributor |
+| Ownership | 🔵Convert | Item(Attribute of item) | Item has ownership|
+| Permissions | 🔵Convert | Item(Attribute of an item) | Items have permissions |
 | Requests | 🟢Keep | Request | Moves through stages before it is ready for decision |
 | Channels | 🔴Remove | - | Replaced by the single point of entry (FR04) |
-| Incomplete | 🔵Convert | Request (state) | A state a request can be in when information is missing |
+| Incomplete | 🔵Convert | Request (stage) | Stage of a request |
 | Staff | 🟢Keep | Staff | Handles requests and records decisions |
-| Expression | 🔵Convert | Request (stage) |A stage a request can be at |
-| Awaiting | 🔵Convert | Request (state) | The state of a request awaiting evidence |
-| Evidence | 🟢Keep | Evidence | Awaited, provided and kept over time |
+| Expression | 🔴Remove| Request (stage) |A stage a request can be at |
+| Awaiting | 🔵Convert | Request (stage) | Stage of a request |
+| Evidence | 🔵Convert | Attribute of Request | History of request  |
 | Decision | 🟢Keep | Decision | A recorded outcome with a person and a date  |
-| Priorities | 🔵Convert |Request (Attribute)  | A property of a request that sets its order |
+| Priorities | 🔵Convert |Request (Attribute of a request)  | A property of a request that sets its order |
 | Exceptions | 🟢Keep  | Exception | A recorded departure from the priority rules  |
-| Applied | 🔵Convert | Operation: apply priority or exception  | An action staff perform on a request |
-| Person or Organisation | 🟡Merge | Third Party | The same role as a third party who assists with a request |
-| Assist | 🔵Convert | Operation: assist request (on Third Party) | An action a third party performs on a request |
-| Authority | 🟢Keep | Authority | Records who may act for a request, with its history |
-| Required | 🔵Convert  | Authority (Attribute) |The condition that must be met before information is shared |
+| Applied | 🔴Remove | Operation: apply priority or exception  | An action staff perform on a request |
+| Person or Organisation | 🔴Remove| Third Party | Outside Scope |
+| Assist | 🔴Remove | Operation: assist request (on Third Party) | Operation rather than class |
+| Authority | 🔴Remove | -  | Records who may act for a request, with its history |
+| Required | 🔴Remove  | - |The condition that must be met before information is shared |
 | Detailed Information | 🔴Remove | -  | Too generic to be a domain term |
-| Sharded | 🔵Convert | Operation: share information | The action of sharing information with a partner or third party|
+| Sharded | 🔴Remove | Operation: share information | The action of sharing information with a partner or third party|
 
 ### Allocation and coordination
 
 | Candidate | Action | Final term | Reason |
 |---|---|---|---|
-| Review | | | |
-| Considers | | | |
-| File Quality | | | |
-| Description | | | |
-| Sensitivity | | | |
-| Ownership evidence | | | |
-| Access Restrictions | | | |
-| Relevance | | | |
-| Item | | | |
-| Preserved | | | |
-| Approved | | | |
-| Public Access | | | |
-| Capacity | | | |
-| Depends On | | | |
-| People | | | |
-| Places | | | |
-| Resources | | | |
-| Timing | | | |
-| Visible Vacancy | | | |
-| Requirement | | | |
-| Satisfied | | | |
-| Provisional Allocations | | | |
-| Remain | | | |
-| Essential information | | | |
-| Missing | | | |
-| Changes | | | |
-| Affect | | | |
-| Linked Arrangements | | | |
-| Staff | | | |
-| Preserve | | | |
-| Confirmed Position | | | |
-| Earlier Evidence | | | |
-| Versions | | | |
+| Review |🟢Keep| - | Considers factors, produces outcomes, and is kept over time |
+| Considers | 🔴Remove | - | The action a review performs on an item  |
+| File Quality | 🔵Convert | Attribute of item | A property of an item that review evaluates |
+| Description | 🔵Convert  | Attribute of item| A property of an item |
+| Sensitivity | 🔴Remove | - | A property of an item that decides whether it can be shared or reported |
+| Ownership evidence | 🔵Convert | Attribute of item | A property of an item that limits who may see it |
+| Relevance | 🔴Remove  | - | A property of an item that review evaluates |
+| Item | 🟢Keep | Item | A piece of material in a contribution |
+| Preserved | 🔴Remove | - | Operation: preserve |
+| Approved | 🔴Remove| - | A status an item can have for public access |
+| Public Access | 🔴Remove| | - | Whether an item is visible to the public |
+| Capacity | 🔴Remove | | The number of places available for new requests |
+| Depends On | 🔴Remove | | |
+| People |🔴Remove  | | |
+| Places | 🟡Merge | Allocation | |
+| Resources | 🔵Convert | Attribute of Allocation | |
+| Timing | 🔵Convert| Attribute of Allocation | |
+| Visible Vacancy | 🟡Merge | Allocation| |
+| Requirement |🔴Remove | | |
+| Satisfied | 🔴Remove | | |
+| Provisional Allocations | 🟡Merge  |Allocation| |
+| Remain | 🔵Convert| Status(Attribute of Allocation) |Status: remain |
+| Essential information | Attribute of Request  | | |
+| Missing | 🔴Remove | | |
+| Changes | 🔵Convert | Operation Change |Core Class describing changes to activities |
+| Affect | 🔴Remove | | |
+| Linked Arrangements | 🔵Convert  | Relationship between requests and allocations| |
+| Staff | 🟢Keep | STaff | Core class |
+| Preserve |🔴Remove | | |
+| Confirmed Position | 🟡Merge | Allocation | |
+| Earlier Evidence |🔵Convert  | History (Attribute of allocation ) | |
+| Versions | 🔵Convert | History | Attribute of allocation |
 
 ### Progress, review and exceptions
 
 | Candidate | Action | Final term | Reason |
 |---|---|---|---|
-| Staff | | | |
-| Progress | | | |
-| Decisions | | | |
-| Outstanding Actions | | | |
-| Notes | | | |
-| Messages | | | |
-| Spreadsheets | | | |
-| Teams | | | |
-| Status Terms | | | |
-| Awaiting Action | | | |
-| Responsible | | | |
-| Planned Activity | | | |
-| Changed | | | |
-| Partially Complete | | | |
-| Paused | | | |
-| Withdrawn | | | |
-| Distinguish | | | |
-| Operational Change | | | |
-| Formal Decision | | | |
-| Silence | | | |
-| Approval | | | |
-| Reviews | | | |
-| Generate | | | |
-| New Actions | | | |
-| Revised Arrangements | | | |
-| Escalation | | | |
-| Earlier Evidence | | | |
-| Overwritten | | | |
-| Circumstances Change | | | |
+| Staff |🔴Remove|  | |
+| Progress |🔵Convert | History (Attribute of request) | |
+| Decisions | 🔴Remove | | |
+| Outstanding Actions | 🟡Merge | Planned Activity(Class) | |
+| Notes |🔴Remove | | |
+| Messages |🔴Remove | | |
+| Spreadsheets |🔴Remove | | |
+| Teams |🔵Convert  | Attribute of Staff(team) | |
+| Status Terms | 🔵Convert | State (Attribute of planned activity) | |
+| Awaiting Action | 🔵Convert | State | |
+| Responsible |🔵Convert | Attribute of planned activity (responsible) | |
+| Planned Activity | 🟢Keep  | | |
+| Changed | 🔴Remove | | |
+| Partially Complete | 🔵Convert | State | |
+| Paused | 🔵Convert | State | |
+| Withdrawn |🔵Convert | State | |
+| Distinguish | 🔴Remove  | | |
+| Operational Change | 🟢Keep | Core Class | |
+| Formal Decision | 🟡Merge | Decision | |
+| Silence |🔴Remove  | | |
+| Approval | 🔵Convert  | Outcome| Attribute of Decision |
+| Reviews | 🔴Remove  | | |
+| Generate |🔴Remove  | | |
+| New Actions | 🟡Merge| Planned Activity | Core class |
+| Revised Arrangements | 🔵Convert | Outcome | Attribute of review |
+| Escalation | 🔵Convert | Outcome (Attribute of review) | |
+| Earlier Evidence | 🔴Remove | | |
+| Overwritten | 🔴Remove | | |
+| Circumstances Change | 🔴Remove | | |
 
 ### Information, reporting and scope
 
 | Candidate | Action | Final term | Reason |
 |---|---|---|---|
-| Coordinator | | | |
-| Needs | | | |
-| Information | | | |
-| Unallocated Requests | | | |
-| Provisional Arrangements | | | |
-| Capacity Conflicts | | | |
-| Overdue Actions | | | |
-| Incomplete Records | | | |
-| External Partners | | | |
-| Receive | | | |
-| Role | | | |
-| Summary Reporting | | | |
-| Needed | | | |
-| Management | | | |
-| Funders | | | |
-| Exposing | | | |
-| Unnecessary | | | |
-| Personal or commercially sensitive information | | | |
-| Connectivity | | | |
-| Unreliable | | | |
-| off-site Work | | | |
-| Initial Scope | | | |
-| Service Coordination | | | |
-| Records | | | |
-| Specialist Professional Systems | | | |
-| Financial Accounting | | | |
-| Unrelated Public Website Functions | | | |
-| Outside Scope | | | |
+| Coordinator | 🟢Keep | Coordinator |Handles unallocated requests |
+| Needs | 🔴Remove | | |
+| Information |🔴Remove | | |
+| Unallocated Requests | 🔵Convert | Status (Attribute of request)| |
+| Provisional Arrangements |🔴Remove | | |
+| Capacity Conflicts | 🔴Remove | | |
+| Overdue Actions | 🔵Convert | State (Attribute of Planned Activity) | |
+| Incomplete Records |🔵Convert |incompleteFlat (Attribute of Request) | |
+| External Partners |🔴Remove | | |
+| Receive |🔴Remove | | |
+| Role |🟡Merge | Attribute of staff | |
+| Summary Reporting | 🔴Remove | | |
+| Needed | 🔴Remove | | |
+| Management | 🔴Remove | | |
+| Funders | 🔴Remove | | |
+| Exposing | 🔴Remove | | |
+| Unnecessary | 🔴Remove | | |
+| Personal or commercially sensitive information | Sensitivity (Attribute of item) | | |
+| Connectivity | 🔴Remove | | |
+| Unreliable | 🔴Remove | | |
+| off-site Work | 🔴Remove | | |
+| Initial Scope | 🔴Remove | | |
+| Service Coordination | 🔴Remove | | |
+| Records | 🟡Merge | Request | Core Class |
+| Specialist Professional Systems | 🔴Remove | | |
+| Financial Accounting | 🔴Remove | | |
+| Unrelated Public Website Functions | 🔴Remove | | |
+| Outside Scope | 🔴Remove | | |
 
 ### Stakeholder evidence
 
 | Candidate | Action | Final term | Reason |
 |---|---|---|---|
-| Coordinator | | | |
-| Vacancy | | | |
-| Match | | | |
-| Important Requirements | | | |
-| Satisfied | | | |
-| Service User | | | |
-| Need | | | |
-| Waiting for information | | | |
-| Decision | | | |
-| Outside Organsation | | | |
-| Administrator | | | |
-| Provisional Arrangements | | | |
-| Capacity | | | |
-| Request | | | |
-| Stalled | | | |
-| Partner Representatives | | | |
-| Role | | | |
-| Case History | | | |
-| Reviewer | | | |
-| New Information | | | |
-| Added | | | |
-| Erasing | | | |
-| Earlier Decisions | | | |
-| Manager | | | |
-| Reasons for delay | | | |
-| Withdrawal | | | |
-| Incomplete Outcomes | | | |
+| Coordinator | 🔴Remove| | |
+| Vacancy | 🔴Remove | | |
+| Match | 🔵Convert | Status (Attribute of allocation) | |
+| Important Requirements | 🔴Remove  | | |
+| Satisfied | 🔴Remove  | | |
+| Service User | 🔴Remove  | | |
+| Need | 🔴Remove  | | |
+| Waiting for information | 🔵Convert | Stage (Attribute of request) | |
+| Decision | 🔴Remove | | |
+| Outside Organisation | 🔴Remove | | |
+| Administrator | 🟢Keep | Administrator |Monitors and releases provisional allocations |
+| Provisional Arrangements | 🔴Remove  | | |
+| Capacity | 🔴Remove  | | |
+| Request | 🔴Remove  | | |
+| Stalled | 🔵Convert |Status (Attribute of allocation) | |
+| Partner Representatives |🔴Remove | | |
+| Role | 🔴Remove  | | |
+| Case History |🔴Remove  | | |
+| Reviewer | 🟡Merge| Staff (role:reviewer) |Role given to staff |
+| New Information | 🔴Remove | | |
+| Added | 🔴Remove | | |
+| Erasing | 🔴Remove | | |
+| Earlier Decisions | 🔴Remove | | |
+| Manager | 🔴Remove | | |
+| Reasons for delay | 🔴Remove | | |
+| Withdrawal | 🔴Remove | | |
+| Incomplete Outcomes | 🔴Remove | | |
 
 ### Unresolved matters
 
 | Candidate | Action | Final term | Reason |
 |---|---|---|---|
-| Information is required | | | |
-| Request | | | |
-| Ready for decision | | | |
-| Eligibility | | | |
-| Priority | | | |
-| Exceptions | | | |
-| Applied | | | |
-| Authority | | | |
-| Acts for requester | | | |
-| Provisional Allocations | | | |
-| Expire | | | |
-| Confirmed | | | |
-| Approve Changes | | | |
-| Substitutions | | | |
-| Withdrawal | | | |
-| Versions | | | |
-| Reviews | | | |
-| Outstanding Actions | | | |
-| Staff | | | |
-| Partners | | | |
-| Funders | | | |
-| Shared | | | |
+| Information is required |🔴Remove | | |
+| Request | 🔴Remove | | |
+| Ready for decision |🔵Convert  | stage (Attribute of Request)| |
+| Eligibility | 🔴Remove | | |
+| Priority | 🔴Remove | | |
+| Exceptions | 🔴Remove | | |
+| Applied | 🔴Remove | | |
+| Authority | 🔴Remove | | |
+| Acts for requester | 🔴Remove | | |
+| Provisional Allocations | 🔴Remove | | |
+| Expire | 🔴Remove | | |
+| Confirmed | 🔴Remove | | |
+| Approve Changes | 🔴Remove | | |
+| Substitutions | 🔴Remove | | |
+| Withdrawal | 🔴Remove | | |
+| Versions | 🔴Remove | | |
+| Reviews | 🔴Remove | | |
+| Outstanding Actions | 🔴Remove| | |
+| Staff | 🔴Remove| | |
+| Partners | 🔴Remove| | |
+| Funders | 🔴Remove| | |
+| Shared | 🔴Remove| | |
 
 
 
 
 ## Task 4: Create the domain glossary
+
+| Action | Candidate | Final term | Reason |
+|---|---|---|---|
+| 🟢 Keep | Contribution | Request | Received, tracked and kept over time |
+| 🟢 Keep | Item | Item | A piece of material within a contribution, with its own media type, description and sensitivity |
+| 🟢 Keep | Contributor | Contributor (actor) | Submits material and is affected by the outcome |
+| 🟢 Keep | Request | Request | Holds items and moves through stages before it is ready for decision |
+| 🟢 Keep | Staff | Staff (actor) | Handles requests, records decisions and makes changes |
+| 🟢 Keep | Decision | Decision | A recorded outcome with a person and a date |
+| 🟢 Keep | Exception | Exception | A recorded departure from the priority rules |
+| 🟢 Keep | Review | Review | Considers factors, produces outcomes and is kept over time |
+| 🟢 Keep | Planned Activity | Planned Activity | Work to be carried out, with a lifecycle |
+| 🟢 Keep | Operational Change | Operational Change | A change to an activity's state, kept separate from decisions |
+| 🟢 Keep | Coordinator | Coordinator (actor) | Handles unallocated requests, allocations and capacity |
+| 🟢 Keep | Administrator | Administrator (actor) | Monitors and releases provisional allocations |
+| 🟡 Merge | Individuals | Contributor | Same actor as a contributor |
+| 🟡 Merge | Local Organisations | Contributor | Same actor as a contributor |
+| 🟡 Merge | Rights Holder | Contributor | Synonym for contributor, unless a rights holder can differ (to confirm) |
+| 🟡 Merge | Publication Decisions | Decision | A decision made at a point in the process |
+| 🟡 Merge | Formal Decision | Decision | A decision made on a work item |
+| 🟡 Merge | Places | Allocation | A held place is the allocation itself |
+| 🟡 Merge | Visible Vacancy | Allocation | A place that looks free but may not be usable |
+| 🟡 Merge | Provisional Allocations | Allocation | Holds a place for a request until confirmed or released |
+| 🟡 Merge | Confirmed Position | Allocation | The confirmed state of an allocation |
+| 🟡 Merge | Outstanding Actions | Planned Activity | Work still to be done on a request |
+| 🟡 Merge | New Actions | Planned Activity | New activities created by a review |
+| 🟡 Merge | Role | Staff (attribute) | The role a staff member has |
+| 🟡 Merge | Records | Request | The shared record of a request |
+| 🟡 Merge | Reviewer | Staff (role: reviewer) | Review is work done by staff in a role |
+| 🔵 Convert | Photographs | Item (mediaType value) | A media type of an item, not a separate class |
+| 🔵 Convert | Documents | Item (mediaType value) | A media type of an item, not a separate class |
+| 🔵 Convert | Audio | Item (mediaType value) | A media type of an item, not a separate class |
+| 🔵 Convert | Video | Item (mediaType value) | A media type of an item, not a separate class |
+| 🔵 Convert | Submission Files | Request | The files that make up a request |
+| 🔵 Convert | Descriptions | Item (attribute) | A property of an item |
+| 🔵 Convert | Ownership (incl. Ownerships statements) | Item (attribute) | A property of an item recording its owner |
+| 🔵 Convert | Ownership evidence | Item (attribute) | A property of an item that review checks |
+| 🔵 Convert | Permissions | Item (attribute) | A property of an item recording who may see or change it |
+| 🔵 Convert | Review Notes | Review (attribute: notes) | Recorded during a review |
+| 🔵 Convert | Personal or commercially sensitive information | Item (attribute: sensitivity) | A sensitivity value that must be excluded from reports |
+| 🔵 Convert | File Quality | Item (attribute) | A property of an item that review evaluates |
+| 🔵 Convert | Evidence | Request (attribute: history) | Awaited, provided and kept over time |
+| 🔵 Convert | Earlier Evidence / Versions | Evidence (attribute: history) | Earlier states and versions, kept as history |
+| 🔵 Convert | Priorities | Request (attribute: priority) | A property of a request that sets its order |
+| 🔵 Convert | Incomplete (incl. Incomplete Records) | Request (attribute: incompleteFlag) | Records that information or details are missing |
+| 🔵 Convert | Awaiting (incl. Waiting for information) | Request (attribute: stage) | The stage of a request awaiting evidence |
+| 🔵 Convert | Ready for decision | Request (attribute: stage) | The stage a request reaches once its criteria are met |
+| 🔵 Convert | Essential information | Request (attribute: essentialInformationStatus) | Information a request must have before it can proceed |
+| 🔵 Convert | Timing | Allocation (attribute) | When an allocation is open or held |
+| 🔵 Convert | Resources | Allocation (attribute) | A factor that affects capacity |
+| 🔵 Convert | Remain (incl. Stalled) | Allocation (attribute: status stalled) | An allocation that stays in place without progress |
+| 🔵 Convert | Match | Allocation (attribute: status ready) | A state where all requirements are met |
+| 🔵 Convert | Linked Arrangements | Relationship between requests and allocations | Dependencies that a change can affect |
+| 🔵 Convert | Progress | Request (attribute: stage) | The stage a request has reached |
+| 🔵 Convert | Teams | Staff (attribute: team) | The team a staff member belongs to |
+| 🔵 Convert | Status Terms | Planned Activity and Request (state values) | The agreed vocabulary for status |
+| 🔵 Convert | Awaiting Action | Planned Activity (attribute: state) | A state showing an activity is waiting to be done |
+| 🔵 Convert | Responsible | Planned Activity (attribute: responsible) | Who is accountable for an activity |
+| 🔵 Convert | Partially Complete | Planned Activity (attribute: state) | A state an activity can be in |
+| 🔵 Convert | Paused | Planned Activity (attribute: state) | A state an activity can be in |
+| 🔵 Convert | Withdrawn | Planned Activity (attribute: state) | A state an activity can be in |
+| 🔵 Convert | Unallocated Requests | Request (attribute: status) | A request with no allocation yet |
+| 🔵 Convert | Overdue Actions | Planned Activity (attribute: state) | An activity past its due date |
+| 🔵 Convert | Approval | Decision (attribute: outcome) | Recorded as a decision outcome, not implied by silence |
+| 🔵 Convert | Revised Arrangements | Review (attribute: outcome) | The result of a review |
+| 🔵 Convert | Escalation | Review (attribute: outcome) | One possible outcome of a review |

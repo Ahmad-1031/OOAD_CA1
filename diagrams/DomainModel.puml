@@ -1,0 +1,134 @@
+@startuml
+title Digital Archive Contribution Service - Domain Model
+left to right direction
+hide methods
+hide circle
+skinparam classAttributeIconSize 0
+
+class Contributor {
+Name
+}
+
+class Request {
+  submissionDate
+  priority
+  stage
+  incompleteFlag
+  history
+}
+
+class Staff {
+   name
+  team
+  role
+}
+
+class Allocation {
+  allocationDate
+  resources
+  status
+  expiry
+  history
+
+}
+
+class Administrator {
+  name
+}
+
+class Coordinator {
+  name
+}
+
+class Item {
+  mediaType
+  description
+  ownership
+  permissions
+  sensitivity
+  fileQuality
+
+}
+
+class Review {
+  reviewDate
+  outcome
+  notes
+
+}
+
+class Decision {
+  outcome
+  decisionDate
+  basis
+}
+
+class PlannedActivity {
+  description
+  state
+  responsible : Staff
+  dueDate
+
+}
+
+class Exception {
+  reason
+  appliedBy : Staff
+}
+
+class OperationalChange {
+  changeDate
+  changeDetails
+  reason
+}
+
+
+
+
+
+
+Contributor "1" -- "0..*" Request : submits
+
+Request "1" *-- "1..*" Item : contains
+Request "1" -- "0..*" PlannedActivity : requires
+Request "1" -- "0..*" Decision : has
+Request "1" -- "0..*" Review : undergoes
+Request "1" -- "0..*" Allocation : holds
+Request "1" -- "0..*" Exception : has
+
+Review "0..*" -- "1..*" Item : considers
+Review "0..1" -- "0..*" PlannedActivity : generates
+
+Staff "1" -- "0..*" PlannedActivity : responsible for
+Staff "1" -- "0..*" Decision : records
+Staff "1" -- "0..*" Review : carries out
+Staff "0..*" -- "0..*" Request : handles
+Staff "1" -- "0..*" Exception : applies
+
+PlannedActivity "1" -- "0..*" OperationalChange : changed by
+
+
+Administrator "1" -- "0..*" Allocation : releases
+Coordinator "0..*" -- "0..*" Allocation : views
+Coordinator "0..*" -- "0..*" Request : views
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'---------------Relationships ----------------'
+
+
+
+@enduml
